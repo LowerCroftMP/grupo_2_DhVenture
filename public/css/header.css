@@ -1,5 +1,4 @@
-.home-header{
-}
+.home-header{box-shadow: 0px 5px 4px var(--grisOscuro);}
 
 .home-header .componentes{
     display: flex;
@@ -15,15 +14,24 @@
 .home-header .componentes .barra-busqueda{}
 
 .home-header .componentes .barra-busqueda .barra{
-width: 196px;
-color: var(--blanco);
-background-color: rgb(255 255 255 / 0.2);
-margin-top: 7%;
-padding: 2%;
-border-radius: 10px;
-font-size: 7px;
-border: solid 2px var(--naranja);
-box-shadow: 1px 4px 7px var(--negro);
+
+width: 196px;
+
+color: var(--blanco);
+
+background-color: rgb(255 255 255 / 0.2);
+
+margin-top: 7%;
+
+padding: 2%;
+
+border-radius: 10px;
+
+font-size: 7px;
+
+border: solid 2px var(--naranja);
+
+box-shadow: 1px 4px 7px var(--negro);
 }
 
 .home-header .componentes .barra-busqueda .barra ::placeholder{
@@ -33,12 +41,18 @@ color: var(--blanco);
 }
 
 .home-header .componentes .fa-magnifying-glass{
-display: flex;
-position: absolute;
-top: 3%;
-right: 26%;
-font-size: 13px;
-color: var(--naranja);
+
+display: flex;
+
+position: absolute;
+
+top: 3%;
+
+right: 26%;
+
+font-size: 13px;
+
+color: var(--naranja);
 }
 
 .home-header .nav{
