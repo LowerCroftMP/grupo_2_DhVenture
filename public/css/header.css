@@ -1,0 +1,69 @@
+.home-header{
+}
+
+.home-header .componentes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-header .componentes .burger-menu{color: var(--naranja);font-size: 23px;margin-top: 3%;margin-left: 2.2%;}
+
+.home-header .componentes .logo{
+    width: 49px;
+}
+
+.home-header .componentes .barra-busqueda{}
+
+.home-header .componentes .barra-busqueda .barra{
+width: 196px;
+color: var(--blanco);
+background-color: rgb(255 255 255 / 0.2);
+margin-top: 7%;
+padding: 2%;
+border-radius: 10px;
+font-size: 7px;
+border: solid 2px var(--naranja);
+box-shadow: 1px 4px 7px var(--negro);
+}
+
+.home-header .componentes .barra-busqueda .barra ::placeholder{
+
+color: var(--blanco);
+
+}
+
+.home-header .componentes .fa-magnifying-glass{
+display: flex;
+position: absolute;
+top: 3%;
+right: 26%;
+font-size: 13px;
+color: var(--naranja);
+}
+
+.home-header .nav{
+}
+
+.home-header .nav .ingresar{
+list-style: none;
+}
+
+.home-header .nav ul{display: flex;position: absolute;top: 2%;right: 2%;}
+
+.home-header .nav a{
+ text-decoration: none;
+ color: rgba(255,255,255,0.6);
+ font-size: 4px;
+ background-color: rgba(255,255,255,0.2);
+ border: solid 1px var(--naranja);
+ border-radius: 5px;
+ padding: 2px;
+}
+
+
+.home-header .nav .acceso{
+
+margin-right: 4px;
+}
+
+.home-header .nav .registro{}
