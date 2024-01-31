@@ -17,14 +17,22 @@
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra{
-display: flex;
-color: var(--blanco);
-background-color: rgb(255 255 255 / 0.2);
-border-radius: 9px;
-font-size: 11px;
-width: 51vw;
-border: solid 2px var(--naranja);
-box-shadow: 1px 4px 7px var(--negro);
+
+display: flex;
+
+color: var(--blanco);
+
+background-color: rgb(255 255 255 / 0.2);
+
+border-radius: 9px;
+
+font-size: 11px;
+
+width: 51vw;
+
+border: solid 2px var(--naranja);
+
+box-shadow: 1px 4px 7px var(--negro);
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra ::placeholder{
@@ -62,7 +70,7 @@ margin-top: 16px;
 list-style: none;
 }
 
-.home-header div .nav ul{display: flex;margin-top: 3vw;}
+.home-header div .nav ul{display: flex;padding-top: 17%;}
 
 .home-header div .nav a{
  text-decoration: none;
@@ -76,44 +84,139 @@ list-style: none;
 
 
 .home-header div .nav .acceso{
-
-margin-right: 4px;
 }
 
 .home-header div .nav .registro{}
 
 
 
-@media (min-width:426){
-    .home-header{}
+@media (min-width:425px){ /*!TABLET*/
 
-.home-header .componentes{
+.home-header{
 }
 
-.home-header .componentes .burger-menu{}
+.home-header .componentes{justify-content: space-between;}
+
+.home-header .componentes .burger-menu{
+    display: none;
+}
 
 .home-header .componentes .logo{
+
+margin-left: 7px;
 }
 
-.home-header .componentes .barra-busqueda{}
+.home-header .componentes .barra-busqueda{
 
-.home-header .componentes .barra-busqueda .barra{}
+}
 
-.home-header .componentes .barra-busqueda .barra ::placeholder{}
+.home-header .componentes .barra-busqueda .div-barra .barra{
 
-.home-header .componentes .fa-magnifying-glass{}
+width: 57vw;
+
+font-size: 7px;
+
+padding: 4px 0px;
+}
+
+.home-header .componentes .barra-busqueda .div-barra .barra ::placeholder{
+
+}
+
+.home-header .componentes .div-barra {
+
+margin-top: 13px;
+}
+
+.home-header .componentes .div-barra div {
+}
+
+.home-header .componentes .div-barra div .fa-magnifying-glass {
+
+position: absolute;
+
+right: 24vw;
+}
 
 .home-header .nav{
 }
 
-.home-header .nav .ingresar{}
+.home-header div .nav .ingresar{
+}
 
-.home-header .nav ul{}
+.home-header div .nav ul{padding-top: 16%;}
 
-.home-header .nav a{}
+.home-header div .nav a{font-size: 4px;padding: 3px 0px;margin-right: 7px;}
 
 
-.home-header .nav .acceso{}
+.home-header div .nav .acceso{
+}
 
-.home-header .nav .registro{}
+.home-header div .nav .registro{}
+
+  
+}
+
+@media (min-width:768px){ /*?DESKTOP*/
+
+.home-header{
+}
+
+.home-header .componentes{
+    margin: auto;
+
+max-width: 1024px;
+
+justify-content: space-around;
+}
+
+.home-header .componentes .burger-menu{
+
+}
+
+.home-header .componentes .logo{
+
+margin: 0;
+
+width: 7%;
+}
+
+.home-header .componentes .barra-busqueda{
+
+}
+
+.home-header .componentes .barra-busqueda .div-barra .barra{font-size: 79%;padding-left: 9px;}
+
+.home-header .componentes .barra-busqueda .div-barra .barra ::placeholder{
+
+}
+
+.home-header .componentes .div-barra {}
+
+.home-header .componentes .div-barra div {
+}
+
+.home-header .componentes .div-barra div .fa-magnifying-glass {position: absolute;right: 27.5vw;font-size: 17px;}
+
+.home-header .nav{
+}
+
+.home-header div .nav .ingresar{
+}
+
+.home-header div .nav ul{padding-top: 11%;}
+
+.home-header div .nav a{
+    font-size: 8px;
+    padding: 4px;
+}
+
+.home-header div .nav .acceso{
+}
+
+.home-header div .nav .registro{
+    
+}
+
+    
 }
