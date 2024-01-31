@@ -1,0 +1,27 @@
+.home-footer{
+}
+.home-footer .nav-footer{display: flex;flex-direction: row;}
+.home-footer .nav-footer .ul-footer{
+
+}
+.home-footer .nav-footer .ul-footer .lista{display: flex;}
+
+.home-footer .padre{
+display: flex;
+flex-direction: row;
+}
+
+.home-footer .padre .nav-footer .atencion{
+
+}
+
+.home-footer .padre .nav-footer .seguinos{
+
+}
+.home-footer .padre .nav-footer .seguinos .redes{
+
+}
+
+.home-footer .padre .nav-footer .barra-email{
+
+}
