@@ -1,70 +1,70 @@
-.home-header{box-shadow: 0px 5px 4px var(--grisOscuro);}
+.home-header{box-shadow: 1px 5px 4px var(--grisOscuro);}
 
 .home-header .componentes{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .home-header .componentes .burger-menu{color: var(--naranja);font-size: 23px;margin-top: 3%;margin-left: 2.2%;}
 
 .home-header .componentes .logo{
-    width: 49px;
+    width: 47px;
 }
 
-.home-header .componentes .barra-busqueda{}
+.home-header .componentes .barra-busqueda{
 
-.home-header .componentes .barra-busqueda .barra{
-
-width: 196px;
-
-color: var(--blanco);
-
-background-color: rgb(255 255 255 / 0.2);
-
-margin-top: 7%;
-
-padding: 2%;
-
-border-radius: 10px;
-
-font-size: 7px;
-
-border: solid 2px var(--naranja);
-
-box-shadow: 1px 4px 7px var(--negro);
 }
 
-.home-header .componentes .barra-busqueda .barra ::placeholder{
+.home-header .componentes .barra-busqueda .div-barra .barra{
+display: flex;
+color: var(--blanco);
+background-color: rgb(255 255 255 / 0.2);
+border-radius: 9px;
+font-size: 11px;
+width: 51vw;
+border: solid 2px var(--naranja);
+box-shadow: 1px 4px 7px var(--negro);
+}
+
+.home-header .componentes .barra-busqueda .div-barra .barra ::placeholder{
 
 color: var(--blanco);
 
 }
 
-.home-header .componentes .fa-magnifying-glass{
+.home-header .componentes .div-barra {
 
 display: flex;
 
-position: absolute;
-
-top: 3%;
-
-right: 26%;
-
-font-size: 13px;
+justify-content: center;
 
 color: var(--naranja);
+
+margin-top: 16px;
+}
+
+.home-header .componentes .div-barra div {
+}
+
+.home-header .componentes .div-barra div .fa-magnifying-glass {
+    display: flex;
+    font-size: 10px;
+    margin-top: 4px;
+    position: absolute;
+    right: 24vw;
 }
 
 .home-header .nav{
 }
 
-.home-header .nav .ingresar{
+.home-header div .nav .ingresar{
 list-style: none;
 }
 
-.home-header .nav ul{display: flex;position: absolute;top: 2%;right: 2%;}
+.home-header div .nav ul{display: flex;margin-top: 3vw;}
 
-.home-header .nav a{
+.home-header div .nav a{
  text-decoration: none;
  color: rgba(255,255,255,0.6);
  font-size: 4px;
@@ -75,9 +75,45 @@ list-style: none;
 }
 
 
-.home-header .nav .acceso{
+.home-header div .nav .acceso{
 
 margin-right: 4px;
 }
 
+.home-header div .nav .registro{}
+
+
+
+@media (min-width:426){
+    .home-header{}
+
+.home-header .componentes{
+}
+
+.home-header .componentes .burger-menu{}
+
+.home-header .componentes .logo{
+}
+
+.home-header .componentes .barra-busqueda{}
+
+.home-header .componentes .barra-busqueda .barra{}
+
+.home-header .componentes .barra-busqueda .barra ::placeholder{}
+
+.home-header .componentes .fa-magnifying-glass{}
+
+.home-header .nav{
+}
+
+.home-header .nav .ingresar{}
+
+.home-header .nav ul{}
+
+.home-header .nav a{}
+
+
+.home-header .nav .acceso{}
+
 .home-header .nav .registro{}
+}
