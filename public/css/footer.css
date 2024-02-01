@@ -1,27 +1,43 @@
-.home-footer{
-}
-.home-footer .nav-footer{display: flex;flex-direction: row;}
-.home-footer .nav-footer .ul-footer{
+.home-footer {}
 
-}
-.home-footer .nav-footer .ul-footer .lista{display: flex;}
-
-.home-footer .padre{
-display: flex;
-flex-direction: row;
+.home-footer .lista {
+    display: flex;
+    flex-direction: row;
 }
 
-.home-footer .padre .nav-footer .atencion{
+.home-footer .lista a{font-size: 5px;text-decoration: none;}
+
+.home-footer .padre {
+
+display: flex;
+
+flex-direction: row;
+
+font-size: 6px;
+}
+
+.home-footer .padre .atencion {
+    
+}
+
+.home-footer .padre.atencion h3{
+}
+
+.home-footer .padre .seguinos {
 
 }
 
-.home-footer .padre .nav-footer .seguinos{
-
-}
-.home-footer .padre .nav-footer .seguinos .redes{
-
+.home-footer .padre .seguinos .contenedor-a{
 }
 
-.home-footer .padre .nav-footer .barra-email{
+.home-footer .padre .seguinos .redes {
 
+}
+
+.home-footer .padre .barra-email {
+
+}
+
+.home-footer .padre .barra-email input{
+    font-size: 3.8vw;
 }
