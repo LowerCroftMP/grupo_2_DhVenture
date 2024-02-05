@@ -1,3 +1,29 @@
-section.colorletra{color: red;}
-section div.loginFbGM{color: aqua;}
-div.colorletra h3.separador{color: aquamarine;}
+main{
+   background-color: #89b9b9;
+}
+section{top: 50%;left: 50%;width: 400px;background: var(--grisOscuro);border-radius: 10px;}
+.colorletra{color: var(--naranja);}
+a.colorletra{padding-left: 30%;}
+.loginFbGM{background-color:var(--grisClaro);color: var(--blanco);border-color: var(--mandarina);border-radius: 10%;}
+div.colorletra {color: var(--naranja);}
+input.boton{border-color: var(--mandarina); background-color: var(--grisClaro); color: var(--blanco);}
+.root{
+    /**Tipografia*/
+    --celeste:#89b9b9;
+    /**aca va blanco*/
+    --naranja:#EF6262;
+    /*?en los Bordes va el naranja de arriba*/
+
+    /**Header*/
+    --grisOscuro: #454545;
+    --negro: #000000;
+
+    /**Barra de busqueda*/
+    --blancoRosado:#FFEADB;
+    --blanco:#FFFFFF;
+    
+    /**Footer*/
+    --grisClaro:#847D78;
+    --mandarina:#FA7F72;
+    /*!aca va el gris oscuro otra vez*/
+}
