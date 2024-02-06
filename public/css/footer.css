@@ -32,17 +32,13 @@
 }
 
 .home-footer .padre .atencion {
-
-    border-left: solid 1px rgba(255, 255, 255, 0.3);
-
-    padding-left: 2%;
-
+border-left: solid 1px rgba(255, 255, 255, 0.3);
+padding-left: 2%;
 }
 
 .home-footer .padre .atencion h3 {
     color: var(--naranja);
     font-size: 4px;
-    padding-bottom: 3px;
 }
 
 
@@ -50,6 +46,7 @@
     font-size: 3px;
     color: var(--blanco);
     opacity: 56%;
+    margin-bottom: 3px;
 }
 
 .home-footer .padre .seguinos {
@@ -181,7 +178,7 @@
 
 }
 
-@media (min-width:768px) {
+@media (min-width:768px){
     /*?DESKTOP*/
 
     .home-footer .padre {
