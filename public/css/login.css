@@ -1,29 +1,56 @@
-main{
-   background-color: #89b9b9;
+body{background-color: var(--grisfond);}
+main {
+    background-color: var(--grisfond);
+    width: 99%;
 }
-section{top: 50%;left: 50%;width: 400px;background: var(--grisOscuro);border-radius: 10px;}
-.colorletra{color: var(--naranja);}
-a.colorletra{padding-left: 30%;}
-.loginFbGM{background-color:var(--grisClaro);color: var(--blanco);border-color: var(--mandarina);border-radius: 10%;}
-div.colorletra {color: var(--naranja);}
-input.boton{border-color: var(--mandarina); background-color: var(--grisClaro); color: var(--blanco);}
-.root{
+main div.global {
+    background-color: var(--grisOscuro);padding-left: 100px;width:60%;height: 50%;}
+
+.colorletra {
+    color: var(--naranja);
+}
+
+a.colorletra {
+    font-size: 10px;
+    padding-left: 1%;
+    flex-direction: row-reverse;
+}
+
+.loginFbGM {font-size:12px;
+    background-color: var(--grisClaro);
+    color: var(--blanco);
+    border-color: var(--mandarina);
+    border-radius: 10%;
+}
+.recuerdame{font-size:10px;color: var(--blanco);}
+div.colorletra {font-size:10px;
+    color: var(--naranja);
+}
+.login{font-size:12px; color: var(--blanco);}
+input.boton {
+    border-color: var(--mandarina);
+    background-color: var(--grisClaro);
+    color: var(--blanco);
+}
+
+.root {
     /**Tipografia*/
-    --celeste:#89b9b9;
+    --celeste: #89b9b9;
     /**aca va blanco*/
-    --naranja:#EF6262;
+    --naranja: #EF6262;
     /*?en los Bordes va el naranja de arriba*/
+    --grisfond:#595959;
 
     /**Header*/
     --grisOscuro: #454545;
     --negro: #000000;
 
     /**Barra de busqueda*/
-    --blancoRosado:#FFEADB;
-    --blanco:#FFFFFF;
-    
+    --blancoRosado: #FFEADB;
+    --blanco: #FFFFFF;
+
     /**Footer*/
-    --grisClaro:#847D78;
-    --mandarina:#FA7F72;
+    --grisClaro: #847D78;
+    --mandarina: #FA7F72;
     /*!aca va el gris oscuro otra vez*/
 }

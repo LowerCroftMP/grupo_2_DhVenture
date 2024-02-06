@@ -1,5 +1,4 @@
 *{
-    /* border-left-color: purple; */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -12,6 +11,8 @@
     /**aca va blanco*/
     --naranja:#EF6262;
     /*?en los Bordes va el naranja de arriba*/
+    /*Background*/
+    --grisfond:#595959;
 
     /**Header*/
     --grisOscuro: #454545;
