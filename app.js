@@ -18,5 +18,11 @@ app.get('/registro', (req, res) =>{
 app.get('/acceso', (req, res) =>{
     res.sendFile(path.join(__dirname,'./views/login.html'))
 })
+
+app.get('/detalle', (req, res) =>{
+    res.sendFile(path.join(__dirname,'./views/detail.html'))
+})
+
+
 app.listen(port,() =>console.log(`http://localhost:${port}`))
 
