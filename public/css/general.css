@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+:root{
+    /**Tipografia*/
+    --celeste:#89b9b9;
+    /**aca va blanco*/
+    --naranja:#EF6262;
+    /*?en los Bordes va el naranja de arriba*/
+
+    /**Header*/
+    --grisOscuro: #454545;
+    --negro: #000000;
+
+    /**Barra de busqueda*/
+    --blancoRosado:#FFEADB;
+    --blanco:#FFFFFF;
+    
+    /**Footer*/
+    --grisClaro:#847D78;
+    --mandarina:#FA7F72;
+    /*!aca va el gris oscuro otra vez*/
+}
+
+header{
+    background-color: var(--grisOscuro);
+}

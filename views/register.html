@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <link rel="stylesheet" href="/css/styles.css">
-        <title>Register</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Register</title>
 </head>
+
 
 <body>
     <header class="home-header">
@@ -44,34 +43,47 @@
 
     <!--Registro-->
     <main>
-
         <section class="tipoletra">
             <div class="global">
                 <div class="colorletra">
-                    <h2>Crear usuario</h2>
+                    <h2>Registrarse</h2>
                 </div>
-                <div><input class="loginFbGM" type="button" name="correo" value="Registrarse con Facebook"><i
-                        class="fa-brands fa-facebook"></i></div>
-                <div><input class="loginFbGM" type="button" name="correo" value="Registrarse con Gmail"><i
-                        class="fa-solid fa-m"></i>
+                <div>
+                    <input class="registerFbGM" type="button" name="correo" value="Registrarse con Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <input class="registerFbGM" type="button" name="correo" value="Registrarse con Gmail">
+                    <i class="fa-solid fa-m"></i>
                 </div>
                 <div class="colorletra">
                     <hr class="separador">
                     <br>
                 </div>
-                <div class="login"><label>Nombre completo: 
-                    electronico<input type="email" name="correo" value=""></label></div>
-                <div class="login"><label>Direccion de correo:
-                        electronico<input type="email" name="correo" value=""></label></div>
-                <div class="login"><label>Contraseña: <input type="password" name="contraseña" value=""></label></div>
-                <div class="login"><label>Repetir contraseña: <input type="password" name="contraseña" value=""></label></div>
-
-
-                <input class="boton" type="submit" name="Registrarme" value="Registrarme">
+                <div class="Register">
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre_apellido" name="nombre_apellido" value="">
+                </div>
+                <div class="Register">
+                    <label for="correo_electronico">Correo electrónico:</label>
+                    <input type="email" id="correo_electronico" name="correo_electronico" value="">
+                </div>
+                <div class="Register">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" value="">
+                </div>
+                <div class="Register">
+                    <label for="repetir_contraseña">Repetir contraseña:</label>
+                    <input type="password" id="repetir_contraseña" name="repetir_contraseña" value="">
+                </div>
+                <div class="input-submit-container">
+                    <input class="boton" type="submit" name="Registrarme" value="Registrarme">
+                </div>
             </div>
         </section>
-
     </main>
+    
+    
     <!--FOOTER-->
     <footer class="home-footer">
         <div class="lista">

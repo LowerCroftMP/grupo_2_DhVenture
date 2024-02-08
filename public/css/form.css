@@ -1,0 +1,99 @@
+body {
+    background-color: #5B5B5B; 
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.registerFbGM,
+.registerFbGM,
+.Register input[type="submit"] {
+    text-align: center;
+}
+
+.global {
+    background-color: #454545; 
+    width: 60%; 
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+
+.Register label {
+    text-align: left; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 300; 
+    color: #FFFFFF; 
+}
+
+.colorletra h2 {
+    color: #EF6262; 
+    text-align: center; /
+}
+
+input[type="submit"].boton {
+    color: #FFFFFF; 
+}
+.colorletra {
+    color: #FFFFFF; 
+}
+
+.separador {
+    border-color: #5B5B5B; 
+}
+
+.Register input[type="text"],
+.Register input[type="email"],
+.Register input[type="password"],
+.registerFbGM {
+    width: calc(100% - 22px); 
+    border: 1px solid #EF6262;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: #847D78;
+    color: #EF6262;
+    border-radius: 5px;
+}
+
+.Register input[type="text"]:hover,
+.Register input[type="email"]:hover,
+.Register input[type="password"]:hover,
+.registerFbGM:hover {
+    background-color: #847D78;
+    color: #ffffff;
+    
+}
+
+.registerFbGM,
+.Register label {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 300; 
+    color: #FFFFFF; 
+}
+
+.registerFbGM {
+    font-size: 12px;
+    font-weight: 300; 
+}
+
+.Register label {
+    font-size: 10px; 
+    font-weight: 300;
+}
+
+.input-submit-container {
+    text-align: center; 
+}
+
+input[type="submit"] {
+    background-color: #847D78;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #EF6262;;
+    border-radius: 4px;
+    cursor: pointer;
+}
