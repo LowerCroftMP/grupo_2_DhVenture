@@ -5,15 +5,12 @@ const port = 3030
 
 const app = express();
 
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) =>{
     res.sendFile(path.join(__dirname,'./views/home.html'))
 })
 
-app.get('/registro', (req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/register.html'))
-})
 
 app.get('/acceso', (req, res) =>{
     res.sendFile(path.join(__dirname,'./views/login.html'))
