@@ -1,36 +1,43 @@
 body{background-color: var(--grisfond);}
-main {
-    background-color: var(--grisfond);
-    width: 99%;
-}
-main div.global {
-    background-color: var(--grisOscuro);padding-left: 100px;width:60%;height: 50%;}
+.contenedor1{height: 300px; margin: 5% 20%;background-color: var(--grisfond);}
+.contenedor2{height: 300px;padding:0px;margin:0px;border-radius: 10px;background-color: var(--grisOscuro);text-align: center;}
 
 .colorletra {
+    padding-bottom: 5%;
+    font-size: 14px;
     color: var(--naranja);
+}
+
+.loginFbGM {
+    margin-bottom: 4%;
+    height: 15px;
+    width: 75%;
+    font-size: 7px;
+    background-color: var(--grisClaro);
+    color: var(--blanco);
+    border-radius: inherit;
+    border: solid 1px var(--mandarina);
 }
 
 a.colorletra {
-    font-size: 10px;
+    font-size: 8px;
     padding-left: 1%;
     flex-direction: row-reverse;
 }
+.recuerdame{padding-bottom: 10%;font-size: 8px;color: var(--blanco);}
 
-.loginFbGM {font-size:12px;
-    background-color: var(--grisClaro);
-    color: var(--blanco);
-    border-color: var(--mandarina);
-    border-radius: 10%;
-}
-.recuerdame{font-size:10px;color: var(--blanco);}
-div.colorletra {font-size:10px;
-    color: var(--naranja);
-}
-.login{font-size:12px; color: var(--blanco);}
+.login{font-size:7px;color: var(--blanco); text-align: start; }
+.input{width: 80%;background-color: var(--grisClaro);border: solid 2px var(--mandarina);border-radius: inherit;}
 input.boton {
-    border-color: var(--mandarina);
+    margin-bottom: 1000px;
+    padding: 3%;
+    height: 15%;
+    width: 53%;
+    font-size: 12px;
     background-color: var(--grisClaro);
     color: var(--blanco);
+    border: solid 3px var(--mandarina);
+    border-radius: inherit;
 }
 
 .root {
