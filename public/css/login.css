@@ -1,6 +1,21 @@
-body{background-color: var(--grisfond);}
-.contenedor1{height: 300px; margin: 5% 20%;background-color: var(--grisfond);}
-.contenedor2{height: 300px;padding:0px;margin:0px;border-radius: 10px;background-color: var(--grisOscuro);text-align: center;}
+body {
+    background-color: var(--grisfond);
+}
+
+.contenedor1 {
+    height: 300px;
+    margin: 5% 20%;
+    background-color: var(--grisfond);
+}
+
+.contenedor2 {
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: var(--grisOscuro);
+    text-align: center; 
+}
 
 .colorletra {
     padding-bottom: 5%;
@@ -9,13 +24,14 @@ body{background-color: var(--grisfond);}
 }
 
 .loginFbGM {
+    padding: 0px 20px 0px 0px;
     margin-bottom: 4%;
     height: 15px;
     width: 75%;
     font-size: 7px;
     background-color: var(--grisClaro);
     color: var(--blanco);
-    border-radius: inherit;
+    border-radius: 5%;
     border: solid 1px var(--mandarina);
 }
 
@@ -24,15 +40,46 @@ a.colorletra {
     padding-left: 1%;
     flex-direction: row-reverse;
 }
-.recuerdame{padding-bottom: 10%;font-size: 8px;color: var(--blanco);}
 
-.login{font-size:7px;color: var(--blanco); text-align: start; }
-.input{width: 80%;background-color: var(--grisClaro);border: solid 2px var(--mandarina);border-radius: inherit;}
+.recuerdame {
+    padding-bottom: 10%;
+    font-size: 8px;
+    color: var(--blanco);
+}
+
+.login {
+    width: 95%;
+    margin-bottom: 5%;
+    margin-left: 13%;
+    text-align: center;
+    font-size: 7px;
+    color: var(--blanco);
+    text-align: start;
+}
+
+.contenedorinput {
+    position: relative;
+}
+
+.input {
+    width: 81%;
+    background-color: var(--grisClaro);
+    border: solid 2px var(--mandarina);
+    border-radius: inherit;
+}
+
+.icon {
+    font-size: 12px;
+    position: absolute;
+    bottom: 9px;
+    right: 35px;
+}
+
 input.boton {
-    margin-bottom: 1000px;
-    padding: 3%;
-    height: 15%;
-    width: 53%;
+    /* margin-bottom: 1px; */
+    /* padding: 3%; */
+    height: 13%;
+    width: 66%;
     font-size: 12px;
     background-color: var(--grisClaro);
     color: var(--blanco);
@@ -46,7 +93,7 @@ input.boton {
     /**aca va blanco*/
     --naranja: #EF6262;
     /*?en los Bordes va el naranja de arriba*/
-    --grisfond:#595959;
+    --grisfond: #595959;
 
     /**Header*/
     --grisOscuro: #454545;
