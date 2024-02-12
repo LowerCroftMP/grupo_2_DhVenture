@@ -32,8 +32,10 @@
 }
 
 .home-footer .padre .atencion {
-border-left: solid 1px rgba(255, 255, 255, 0.3);
-padding-left: 2%;
+
+    border-left: solid 1px rgba(255, 255, 255, 0.3);
+
+    padding-left: 2%;
 }
 
 .home-footer .padre .atencion h3 {
@@ -178,7 +180,7 @@
 
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     /*?DESKTOP*/
 
     .home-footer .padre {
@@ -208,7 +210,6 @@
     }
 
     .home-footer .padre {
-
         display: flex;
 
         flex-direction: row;
