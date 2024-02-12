@@ -134,9 +134,6 @@
 
     .home-header .componentes {
         margin: auto;
-
-        max-width: 1024px;
-
         justify-content: space-around;
     }
 
