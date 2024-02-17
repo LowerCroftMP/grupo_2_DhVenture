@@ -1,10 +1,86 @@
-.contenedorcar{height: 500px;margin: 10px;}
+main.contenedortotal{ flex-direction: column;background-color: red;}
+.contenedorcar {
+    height: 500px;
+    /* margin: 10%; */
+    flex-direction: column;
+    position: relative;
+    background-color: var(--grisfond);
+    /* margin: 168px; */
+}
+div.prueba{/* display: flex; *//* align-items: center; *//* justify-content: flex-start; */}
 .micompra{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 19%;
 }
-.icon{}
-.img{
-    width: 60px;
-    height: 50px;
+.icon2 {
+    font-size: 25px;
+    margin: 5%;
+    /* color: black; */
+    border-color: var(--naranja);
 }
-.discount{}
-.boton{}
+
+.contmicompra {display: flex;flex-direction: row;align-items: center;font-size: 10px;/* text-align: center; */}
+.articulo{
+    color: var(--celeste);
+    margin-top: 9%;
+    /* flex-direction: column; */
+    display: flex;
+    padding-left: 45%;
+    position: absolute;
+    font-size: 83%;
+}
+.linkimg{
+    position: relative;
+    flex-direction: row;
+    display: flex;
+}
+.contenedorimg1{border-top: solid 3px var(--naranja);}
+.contenedorimg2{border-top: solid 3px var(--naranja);border-bottom: solid 3px var(--naranja);}
+.imagenes{
+}
+.imgcar {
+    margin: 10px;
+    border-radius: 25%;
+    border: solid 2px var(--naranja);
+    display: flex;
+    width: 32%;
+}
+
+.discount {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.botondescuento{
+    margin-bottom: 8%;
+    opacity: 0.8;
+    font-size: 8px;
+    background-color: var(--grisClaro);
+    border-radius: 30px;
+    height: 15px;
+    width: 90px;
+}
+
+.contenedorboton {text-align: center;}
+.botoncar{font-size: 14px;border: solid 2px var(--naranja);border-radius: 30px;background-color: #66B578;}
+.root {
+    /**Tipografia*/
+    --celeste: #89b9b9;
+    /**aca va blanco*/
+    --naranja: #EF6262;
+    /*?en los Bordes va el naranja de arriba*/
+    --grisfond: #595959;
+
+    /**Header*/
+    --grisOscuro: #454545;
+    --negro: #000000;
+
+    /**Barra de busqueda*/
+    --blancoRosado: #FFEADB;
+    --blanco: #FFFFFF;
+
+    /**Footer*/
+    --grisClaro: #847D78;
+    --mandarina: #FA7F72;
+    /*!aca va el gris oscuro otra vez*/
+}
