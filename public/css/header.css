@@ -5,7 +5,8 @@
 .home-header .componentes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .home-header .componentes .burger-menu {
@@ -20,49 +21,38 @@
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra {
-
     display: flex;
-
     color: var(--blanco);
-
     background-color: rgb(255 255 255 / 0.2);
-
     border-radius: 9px;
-
     font-size: 11px;
-
     width: 51vw;
-
     border: solid 2px var(--naranja);
-
     box-shadow: 1px 4px 7px var(--negro);
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra ::placeholder {
-
     color: var(--blanco);
-
 }
 
 .home-header .componentes .div-barra {
-
     display: flex;
-
-    justify-content: center;
-
+    justify-content: space-between;
+    /* Alinear los elementos al principio y al final */
+    align-items: center;
+    /* Alinear verticalmente al centro */
     color: var(--naranja);
-
     margin-top: 16px;
+    position: relative;
 }
 
 .home-header .componentes .div-barra div .fa-magnifying-glass {
-    display: flex;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 4px;
     position: absolute;
-    right: 24vw;
+    right: 1vw;
+    margin-top: -9px;
 }
-
 
 .home-header div .nav .ingresar {
     list-style: none;
@@ -85,8 +75,7 @@
 
 
 
-
-@media (min-width:425px) {
+@media (min-width:560px) {
     /*!TABLET*/
 
     .home-header .componentes {
@@ -109,6 +98,7 @@
         font-size: 7px;
 
         padding: 4px 0px;
+        position: relative;
     }
 
     .home-header .componentes .div-barra {
@@ -120,7 +110,9 @@
 
         position: absolute;
 
-        right: 24vw;
+        font-size: 16px;
+
+        right: 1vw;
     }
 
     .home-header div .nav ul {
