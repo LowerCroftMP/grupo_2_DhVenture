@@ -20,9 +20,6 @@ app.get('/detalle', (req, res) =>{
     res.sendFile(path.join(__dirname,'./views/detail.html'))
 })
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
-
 app.get('/registro', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'register.html'));
 });
