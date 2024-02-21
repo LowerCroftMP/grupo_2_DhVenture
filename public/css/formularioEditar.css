@@ -1,0 +1,40 @@
+.body-form {
+    background-color: var(--grisOscuro);
+    font-size: 10px;
+}
+
+.body-form .main-form {}
+
+.body-form .main-form .div-padre {
+    margin: auto;
+    width: 90%;
+}
+
+.body-form .main-form div .titulo {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.body-form .main-form .div-padre .form {}
+
+.body-form .main-form .div-padre .form .editar-titulo input {
+    width: 30%;
+}
+
+.body-form .main-form .div-padre .form .editar-precio input {
+    width: 30%;
+}
+
+.body-form .main-form .div-padre .form .editar-categoria {
+  
+}
+
+.body-form .main-form .div-padre .form .editar-descripcion {
+}
+
+.body-form .main-form .div-padre .form .editar-imagen input {
+    width: 47%;
+}
+
+.body-form .main-form .div-padre .form .boton {}
