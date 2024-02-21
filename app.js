@@ -25,7 +25,7 @@ app.get('/registro', (req, res) => {
 
 
 app.get('/formulario-editar', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/formulario.edit.html'));
+    res.sendFile(path.join(__dirname, './views/formularioEditar.html'));
 });
 
 app.listen(port,() =>console.log(`http://localhost:${port}`))
