@@ -1,40 +1,61 @@
-.body-form {
+.body-form .main-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--grisOscuro);
-    font-size: 10px;
 }
 
-.body-form .main-form {}
-
 .body-form .main-form .div-padre {
-    margin: auto;
-    width: 90%;
+    max-width: 650px;
+    padding: 28px;
+    margin: 10px 28px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(132, 125, 120, 0.2);
+    box-shadow: 0px 1px 10px rgb(0 0 0);
 }
 
 .body-form .main-form div .titulo {
-    display: block;
-    font-size: 13px;
-    text-align: center;
+    font-size: 17px;
+    text-align: left;
+    border-bottom: solid 1px;
+    color: rgba(255, 255, 255, 0.8);
+    display: initial;
 }
 
 .body-form .main-form .div-padre .form {}
 
+.body-form .main-form .div-padre .form .div-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.body-form .main-form .div-padre .form .input .barra {
+    background-color: rgba( 132, 125, 120,0.2);
+    border: none;
+    border-radius: 5px;
+    height: 4vh;
+    margin-bottom: 10px;
+}
+
+
 .body-form .main-form .div-padre .form .editar-titulo input {
-    width: 30%;
+ 
 }
 
-.body-form .main-form .div-padre .form .editar-precio input {
-    width: 30%;
+.body-form .main-form .div-padre .form .editar-precio input {}
+
+.body-form .main-form .div-padre .form .editar-categoria {}
+
+.body-form .main-form .div-padre .form .editar-descripcion {}
+
+.body-form .main-form .div-padre .form .editar-imagen .label-titulo {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.body-form .main-form .div-padre .form .editar-categoria {
-  
-}
-
-.body-form .main-form .div-padre .form .editar-descripcion {
-}
-
-.body-form .main-form .div-padre .form .editar-imagen input {
-    width: 47%;
-}
+.body-form .main-form .div-padre .form .editar-imagen input {}
 
 .body-form .main-form .div-padre .form .boton {}

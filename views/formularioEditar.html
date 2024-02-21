@@ -46,29 +46,28 @@
 
     <main class="main-form">
         <div class="div-padre">
-            <div>
-                <h1 class="titulo">Editar producto</h1>
-            </div>
             <form class="form">
-                <div class="editar-titulo">
-                    <input type="text" id="title" name="titulo" placeholder="Editar titulo">
-                </div>
-                <div class="editar-precio">
-                    <input type="text" id="price" name="precio" placeholder="Editar precio">
-                </div>
-                <div class="editar-categoria">
-                    <input type="text" id="category" name="categoria" placeholder="Editar categoria">
-                </div>
-                <div class="editar-descripcion">
-                    <input type="text" id="description" name="descripcion" placeholder="Editar descripcion">
-                </div>
-                <div class="editar-imagen">
-                    <label class="label-titulo" for="image">Editar imagen del producto</label>
-                    <br>
-                    <input type="file" id="image" name="imagen" >
-                </div>
-                <div class="boton">
-                    <button type="submit" id="button" name="boton">Guardar cambios</button>
+                <h1 class="titulo">Editar producto</h1>
+                <div class="div-form">
+                    <div class="editar-titulo input">
+                        <input class="barra" type="text" id="title" name="titulo" placeholder="Editar titulo">
+                    </div>
+                    <div class="editar-precio input">
+                        <input class="barra" type="text" id="price" name="precio" placeholder="Editar precio">
+                    </div>
+                    <div class="editar-categoria input">
+                        <input class="barra" type="text" id="category" name="categoria" placeholder="Editar categoria">
+                    </div>
+                    <div class="editar-descripcion input">
+                        <input class="barra" type="text" id="description" name="descripcion" placeholder="Editar descripcion">
+                    </div>
+                    <div class="editar-imagen">
+                        <label class="label-titulo" for="image">Seleccionar imagen del producto</label>
+                        <input type="file" id="image" name="imagen">
+                    </div>
+                    <div class="boton">
+                        <button type="submit" id="button" name="boton">Guardar cambios</button>
+                    </div>
                 </div>
             </form>
         </div>
