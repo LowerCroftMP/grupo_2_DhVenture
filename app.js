@@ -23,10 +23,11 @@ app.get('/registro', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'register.html'));
 });
 
-
 app.get('/formulario-editar', (req, res) => {
     res.sendFile(path.join(__dirname, './views/formularioEditar.html'));
 });
 
-app.listen(port,() =>console.log(`http://localhost:${port}`))
+app.get('/carrito',(req,res)=>{res.sendFile(path.join(__dirname,'./views/carrito.html'))})
 
+
+app.listen(port,() =>console.log(`http://localhost:${port}`))

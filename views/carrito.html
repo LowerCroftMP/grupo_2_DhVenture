@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Login</title>
+    <title>Carrito</title>
 </head>
 
-<body class="bodyL">
+<body>
     <header class="home-header">
         <div class="componentes">
             <div class="burger-menu">
@@ -33,40 +33,34 @@
             <div>
                 <nav class="nav">
                     <ul class="ingresar">
+                        <li><a class="acceso" href="/acceso">Iniciar Seción</a></li>
                         <li><a class="registro" href="/registro">Registrarse</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </header>   
+    </header>
 
-    <!--LOGIN-->
-    <main>
-<div class="contenedor1">
-        <section class="contenedor2">
-            
-                <div class="colorletra">
-                    <h2>Login</h2>
-                </div>
-                <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo" value="Iniciar sesion con Facebook"><i
-                        class="fa-brands fa-facebook icon"></i></div>
-                <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo" value="Iniciar sesion con Gmail"><i
-                        class="fa-solid fa-m icon"></i>
-                </div>
-                <div class="colorletra">
-                    o
-                </div>
-                <div class="login"><label>Direccion de correo
-                        electronico<input class="input" type="email" name="correo" value=""></label></div>
-                <div class="login"><label>Contraseña<input class="input"type="password" name="contraseña" value=""></label></div>
+    <!--CARRITO-->
+    <main class="contenedortotal">
 
-                <div class="recuerdame"><label><input type="checkbox" name="Recuerdame">Recuerdame</label><a href=""
-                        class="colorletra">                           
-                        ¿Olvidaste la contraseña?</a></div>
-                <input class="boton" type="submit" name="Iniciar Sesion" value="Iniciar Sesion">
-            
-        </section>
-</div>
+        <div class="contenedorcar">
+            <section>
+                <div class="prueba">
+                    <div class="contmicompra">
+                        <i class="fa-solid fa-cart-shopping icon2"></i>
+                        <h1 class="micompra">Mi Compra</h1>
+                    </div>
+                    <div class="imagenes">
+                        <div class="contenedorimg1"><a class="linkimg" href="#"><img class="imgcar" src="../images/monitor.png" alt=""><h2 class="articulo">Monitor Phillips 19</h2></a></div>
+                            <div class="contenedorimg2"><a class="linkimg"href="#"><img class="imgcar" src="../images/Procesador-Amd.png" alt=""><h2 class="articulo">Procesador AMD RYZEN 3 3200G 4.0GHz Turbo + Stealth Cooler</h2></a></div>
+                    </div>
+                    <div class="discount"><label>Cupon: <input class="botondescuento"type="text" name="descuento" value="Codigo promocional"></label></div>
+                    <div class="contenedorboton"><input class="botoncar"type="button" name="pagar" value="Pagar:$315980"></div>
+                </div>
+            </section>
+        </div>
+
     </main>
     <footer class="home-footer">
         <div class="lista">
