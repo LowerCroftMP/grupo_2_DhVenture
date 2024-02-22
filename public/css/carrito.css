@@ -8,8 +8,6 @@
     background-color: var(--grisfond);
 }
 
-div.prueba {}
-
 .micompra {
     font-size: 18px;
     margin-left: 19%;
@@ -51,8 +49,6 @@ div.prueba {}
     border-top: solid 3px var(--naranja);
     border-bottom: solid 3px var(--naranja);
 }
-
-.imagenes {}
 
 .imgcar {
     margin: 10px;
@@ -101,8 +97,6 @@ div.prueba {}
         background-color: var(--grisfond);
     }
     
-    div.prueba {}
-    
     .micompra {
         font-size: 33px;
         margin-left: 25%;
@@ -144,8 +138,6 @@ div.prueba {}
         border-top: solid 3px var(--naranja);
         border-bottom: solid 3px var(--naranja);
     }
-    
-    .imagenes {}
     
     .imgcar {
         margin: 10px;
