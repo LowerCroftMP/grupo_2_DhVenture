@@ -32,18 +32,18 @@
     padding: 10px 0;
 }
 
+
 .body-form .main-form .div-padre .form .input .barra {
-    background-color: rgba( 132, 125, 120,0.2);
-    border: none;
+    background-color: rgba(132, 125, 120, 0.2);
+    border: dashed 1px var(--naranja);
     border-radius: 5px;
-    height: 4vh;
+    padding: 3.5px;
     margin-bottom: 10px;
+    width: 64vw;
 }
 
 
-.body-form .main-form .div-padre .form .editar-titulo input {
- 
-}
+.body-form .main-form .div-padre .form .editar-titulo input {}
 
 .body-form .main-form .div-padre .form .editar-precio input {}
 
@@ -51,11 +51,51 @@
 
 .body-form .main-form .div-padre .form .editar-descripcion {}
 
-.body-form .main-form .div-padre .form .editar-imagen .label-titulo {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.8);
+.body-form .main-form .div-padre .form .editar-imagen {
+    margin-bottom: 10px;
+}
+
+.body-form .main-form .div-padre .form .editar-imagen input {
+    display: none;
+}
+
+.body-form .main-form .div-padre .form .editar-imagen .boton {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(132, 125, 120, 0.2);
+    padding: 4px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.body-form .main-form .div-padre .form .editar-imagen .boton:hover {
+    background-color: var(--naranja);
+    box-shadow: 0px 1px 5px rgb(0 0 0);
 }
 
 .body-form .main-form .div-padre .form .editar-imagen input {}
 
-.body-form .main-form .div-padre .form .boton {}
+.body-form .main-form .div-padre .form .boton {
+    font-size: 11px;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(132, 125, 120, 0.2);
+    padding: 4px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.body-form .main-form .div-padre .form .boton:hover {
+    background-color: var(--naranja);
+    box-shadow: 0px 1px 5px rgb(0 0 0);
+}
+
+
+@media (min-width:560px) {
+    /*!TABLET*/
+
+}
+
+@media (min-width:768px) {
+    /*?DESKTOP*/
+}
