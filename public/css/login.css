@@ -1,4 +1,4 @@
-body {
+.bodyL {
     background-color: var(--grisfond);
 }
 
@@ -87,30 +87,9 @@ input.boton {
     border-radius: inherit;
 }
 
-.root {
-    /**Tipografia*/
-    --celeste: #89b9b9;
-    /**aca va blanco*/
-    --naranja: #EF6262;
-    /*?en los Bordes va el naranja de arriba*/
-    --grisfond: #595959;
-
-    /**Header*/
-    --grisOscuro: #454545;
-    --negro: #000000;
-
-    /**Barra de busqueda*/
-    --blancoRosado: #FFEADB;
-    --blanco: #FFFFFF;
-
-    /**Footer*/
-    --grisClaro: #847D78;
-    --mandarina: #FA7F72;
-    /*!aca va el gris oscuro otra vez*/
-}
 @media (min-width:560px) {
     /*!TABLET*/
-    body {
+    .bodyL {
         background-color: var(--grisfond);
     }
     
@@ -201,7 +180,7 @@ input.boton {
 }
 @media (min-width: 768px) {
     /*?DESKTOP*/
-    body {
+    .bodyL {
         background-color: var(--grisfond);
     }
     
