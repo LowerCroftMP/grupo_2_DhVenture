@@ -4,6 +4,9 @@ const path = require('path')
 const port = 3030
 
 const app = express();
+app.set('views',path.join(__dirname,"./views/partials"))
+app.set('view engine','ejs')
+
 
 app.use(express.static('public'));
 
