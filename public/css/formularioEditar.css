@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     background-color: var(--grisOscuro);
+    height: 80.5vh;
 }
 
 .body-form .main-form .div-padre {
-    max-width: 650px;
+    max-width: 472px;
     padding: 15px;
     margin: 10px 28px;
     border-radius: 20px;
@@ -15,7 +16,7 @@
     box-shadow: 0px 1px 10px rgb(0 0 0);
 }
 
-.body-form .main-form .div-padre .volver{
+.body-form .main-form .div-padre .volver {
     font-size: 9px;
     border: none;
     background-color: rgba(132, 125, 120, 0.2);
@@ -24,12 +25,12 @@
     transition: 500ms;
 }
 
-.body-form .main-form .div-padre .volver a{
+.body-form .main-form .div-padre .volver a {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
 
-.body-form .main-form .div-padre .volver:hover{
+.body-form .main-form .div-padre .volver:hover {
     background-color: var(--naranja);
     box-shadow: 0px 1px 5px rgb(0 0 0);
 }
@@ -38,40 +39,26 @@
     font-size: 17px;
     text-align: center;
     padding: 5px;
-    color: rgba(255, 255, 255, 0.8);
-    /* display: initial; */
+    border-bottom: solid 1px rgba(255, 255, 255, 0.7);
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.body-form .main-form .div-padre .form {
-
-}
 
 .body-form .main-form .div-padre .form .div-form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-top: solid 1px rgba(255, 255, 255, 0.8);
+    justify-content: space-around;
 }
-
 
 .body-form .main-form .div-padre .form .input .barra {
     background-color: rgba(132, 125, 120, 0.2);
     border: dashed 1px var(--naranja);
     border-radius: 5px;
-    padding: 3.5px;
-    margin-bottom: 10px;
+    padding: 4px;
+    margin-bottom: 9px;
     width: 100%;
 }
-
-
-.body-form .main-form .div-padre .form .editar-titulo input {}
-
-.body-form .main-form .div-padre .form .editar-precio input {}
-
-.body-form .main-form .div-padre .form .editar-categoria {}
-
-.body-form .main-form .div-padre .form .editar-descripcion {}
 
 .body-form .main-form .div-padre .form .editar-imagen {
     margin-bottom: 10px;
@@ -81,7 +68,7 @@
     display: none;
 }
 
-.body-form .main-form .div-padre .form .editar-imagen .boton {
+.body-form .main-form .div-padre .form .editar-imagen .botonhover {
     font-size: 11px;
     color: rgba(255, 255, 255, 0.5);
     background-color: rgba(132, 125, 120, 0.2);
@@ -90,14 +77,31 @@
     transition: 500ms;
 }
 
-.body-form .main-form .div-padre .form .editar-imagen .boton:hover {
+.body-form .main-form .div-padre .form .editar-imagen .botonhover:hover {
     background-color: var(--naranja);
     box-shadow: 0px 1px 5px rgb(0 0 0);
 }
 
-.body-form .main-form .div-padre .form .editar-imagen input {}
 
-.body-form .main-form .div-padre .form .boton {
+.body-form .main-form .div-padre .form .div-form2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.body-form .main-form .div-padre .form .div-form2 .editar-categoria {
+    margin-bottom: 9px;
+}
+
+.body-form .main-form .div-padre .form .div-form2 .editar-categoria label {
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: double;
+    border-top: double;
+    font-size: 11px;
+    padding: 0px 4px;
+}
+
+.body-form .main-form .div-padre .form .botonhover {
     font-size: 11px;
     border: none;
     color: rgba(255, 255, 255, 0.5);
@@ -107,17 +111,19 @@
     transition: 500ms;
 }
 
-.body-form .main-form .div-padre .form .boton:hover {
-    background-color: var(--naranja);
+.body-form .main-form .div-padre .form .botonhover:hover {
+    background-color: var(--naranja); 
     box-shadow: 0px 1px 5px rgb(0 0 0);
 }
 
 
 @media (min-width:560px) {
     /*!TABLET*/
-
 }
 
 @media (min-width:768px) {
     /*?DESKTOP*/
+    .body-form .main-form .div-padre .form .input .barra {
+    margin: 7px;
+    }
 }
