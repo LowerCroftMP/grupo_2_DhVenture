@@ -4,15 +4,14 @@ const path = require('path')
 const port = 3030
 
 const app = express();
-app.set('views',path.join(__dirname,"./views/partials"))
-app.set('view engine','ejs')
 
+const otherRoutes = require('./routers/other.routes')
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/home.html'))
-})
+app.set('view engine','ejs')
+
+app.use('/', otherRoutes)
 
 app.get('/acceso', (req, res) =>{
     res.sendFile(path.join(__dirname,'./views/login.html'))
@@ -28,5 +27,6 @@ app.get('/registro', (req, res) => {
 
 
 app.get('/carrito',(req,res)=>{res.sendFile(path.join(__dirname,'./views/carrito.html'))})
+
 app.listen(port,() =>console.log(`http://localhost:${port}`))
 
