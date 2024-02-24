@@ -27,5 +27,6 @@ app.get('/registro', (req, res) => {
 });
 
 
+app.get('/carrito',(req,res)=>{res.sendFile(path.join(__dirname,'./views/carrito.html'))})
 app.listen(port,() =>console.log(`http://localhost:${port}`))
 

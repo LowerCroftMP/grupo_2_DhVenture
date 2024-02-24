@@ -1,0 +1,184 @@
+.contenedortotal {
+    flex-direction: column;
+}
+
+.contenedorcar {
+    flex-direction: column;
+    position: relative;
+    background-color: var(--grisfond);
+}
+
+.micompra {
+    font-size: 18px;
+    margin-left: 19%;
+}
+
+.icon2 {
+    /* font-size: 25px; */
+    margin: 5%;
+    border-color: var(--naranja);
+}
+
+.contmicompra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+}
+
+.articulo {
+    color: var(--celeste);
+    margin-top: 9%;
+    display: flex;
+    padding-left: 45%;
+    position: absolute;
+    font-size: 83%;
+}
+
+.linkimg {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+}
+
+.contenedorimg1 {
+    border-top: solid 3px var(--naranja);
+}
+
+.contenedorimg2 {
+    border-top: solid 3px var(--naranja);
+    border-bottom: solid 3px var(--naranja);
+}
+
+.imgcar {
+    margin: 10px;
+    border-radius: 25%;
+    border: solid 2px var(--naranja);
+    display: flex;
+    width: 32%;
+}
+
+.discount {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.botondescuento {
+    margin-bottom: 8%;
+    opacity: 0.8;
+    font-size: 8px;
+    background-color: var(--grisClaro);
+    border-radius: 30px;
+    height: 15px;
+    width: 90px;
+}
+
+.contenedorboton {
+    text-align: center;
+}
+
+.botoncar {
+    font-size: 14px;
+    border: solid 2px var(--naranja);
+    border-radius: 30px;
+    background-color: #66B578;
+}
+
+
+@media (min-width:560px) {
+
+    .contenedortotal {
+        flex-direction: column;
+    }
+    
+    .contenedorcar {
+        flex-direction: column;
+        position: relative;
+        background-color: var(--grisfond);
+    }
+    
+    .micompra {
+        font-size: 33px;
+        margin-left: 25%;
+    }
+    
+    .icon2 {
+        font-size: 30px;
+        margin: 5%;
+        border-color: var(--naranja);
+    }
+    
+    .contmicompra {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+    }
+    
+    .articulo {
+        color: var(--celeste);
+        margin-top: 9%;
+        display: flex;
+        padding-left: 45%;
+        position: absolute;
+        font-size: 150%;
+    }
+    
+    .linkimg {
+        position: relative;
+        flex-direction: row;
+        display: flex;
+    }
+    
+    .contenedorimg1 {
+        border-top: solid 3px var(--naranja);
+    }
+    
+    .contenedorimg2 {
+        border-top: solid 3px var(--naranja);
+        border-bottom: solid 3px var(--naranja);
+    }
+    
+    .imgcar {
+        margin: 10px;
+        border-radius: 25%;
+        border: solid 2px var(--naranja);
+        display: flex;
+        width: 32%;
+    }
+    
+    .discount {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    .botondescuento {
+        margin-left: 5%;
+        margin-bottom: 8%;
+        opacity: 0.8;
+        font-size: 8px;
+        background-color: var(--grisClaro);
+        border-radius: 30px;
+        height: 15px;
+        width: 102px;
+    }
+    
+    .contenedorboton {
+        text-align: center;
+    }
+    
+    .botoncar {
+        width: 30%;
+        margin-bottom: 5%;
+        font-size: 14px;
+        border: solid 2px var(--naranja);
+        border-radius: 30px;
+        background-color: #66B578;
+    }
+
+    /*!TABLET*/
+}
+
+@media (min-width:768px) {
+    /*?DESKTOP*/
+}

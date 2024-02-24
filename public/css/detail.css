@@ -1,12 +1,10 @@
 
-body {
+.bodyC {
     font-family: 'Roboto', sans-serif;
-    margin: 10px;
-    padding: 5px;
     background-color: #FFF;
 }
 
-main {
+.mainC {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -138,16 +136,14 @@ button:hover {
 
 /* Estilos para escritorio */
 @media (min-width: 768px) {
-    body {
+    .bodyC {
         font-family: 'Roboto', sans-serif;
-        margin: 20px;
-        padding: 10px;
         background-color: #FFF;
     }
     
 
     /*contenedor principal*/
-    main {
+    .mainC {
         display: flex;
         justify-content: flex-start;
         max-width: 1200px;
