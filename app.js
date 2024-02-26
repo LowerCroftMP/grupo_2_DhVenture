@@ -7,11 +7,18 @@ const app = express();
 
 const otherRoutes = require('./routers/other.routes')
 
-app.use(express.static('public'));
 
+app.set('views', path.join(__dirname,'views'))
 app.set('view engine','ejs')
 
+
+app.use(express.static('public'));
+
 app.use('/', otherRoutes)
+
+app.use("/crear-producto",otherRoutes)
+
+
 
 app.get('/login', (req, res) =>{
     res.sendFile(path.join(__dirname,'./views/login.html'))
