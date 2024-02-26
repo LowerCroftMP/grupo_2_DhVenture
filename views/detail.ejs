@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head',{title:'Detalle de producto'}) %>
+
+<body class="bodyC">
+  
+    <%- include('./partials/header') %>
+
+    <main class="mainC">
+        <div class="details-and-container">
+            <section class="image-details-container">
+                <div class="image-container">
+                    <img src="/images/img1.jpeg" alt="img1">
+                    <div class="additional-images">
+                        <img class="hidden-on-mobile" src="/images/img2.jpeg" alt="img2">
+                        <img class="hidden-on-mobile" src="/images/img3.jpeg" alt="img3">
+                        <img class="hidden-on-mobile" src="/images/img4.jpeg" alt="img4">
+                        <img class="hidden-on-mobile" src="/images/img5.jpeg" alt="img5">
+                        <img class="hidden-on-mobile" src="/images/img6.jpeg" alt="img6">
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2>Procesador AMD RYZEN 3 3200G 4.0GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth Cooler</h2>
+                    <p class="rating">Calificación: 4.8</p>
+                    <p class="price">
+                        <h3>$220.990</h3>
+                    </p>
+                    <p class="share">en 12x $25.123</p>
+                    <div class="features-container">
+                        <h3>CARACTERISTICAS GENERALES</h3>
+                        <ul>
+                            <li><strong>Modelo:</strong> Ryzen 3 3200G</li>
+                            <li><strong>Socket:</strong> AM4 APU 3th Gen</li>
+                            <li><strong>Núcleos:</strong> 4</li>
+                            <li><strong>Frecuencia:</strong> 3600.00 MHz</li>
+                            <li><strong>Proceso De Fabricación:</strong> 12 nm</li>
+                            <li><strong>Chipset Gpu:</strong> Radeon Vega 8</li>
+                            <li><strong>Hilos:</strong> 4</li>
+                            <li><strong>Frecuencia Turbo:</strong> 4000 MHz</li>
+                            <li><strong>Familia:</strong> AMD RYZEN</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar">
+                <ul>
+                    <li><i class="fa-solid fa-shield-halved"></i> Garantía oficial - 24 meses</li>
+                    <li><i class="fa-solid fa-truck"></i></i> Envíos a todo el país</li>
+                    <li><i class="fa-solid fa-check"></i> Stock disponible</li>
+                </ul>
+                <button class="button">Comprar ahora</button>
+                <button class="button">Agregar al carrito</button>
+            </section>
+        </div>
+    </main>
+    
+    <%- include('./partials/footer') %>
+
+</body>
+
+</html>

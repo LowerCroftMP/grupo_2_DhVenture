@@ -61,7 +61,7 @@ a.colorletra {
     position: relative;
 }
 
-.input {
+.inputL {
     width: 81%;
     background-color: var(--grisClaro);
     border: solid 2px var(--mandarina);
@@ -152,7 +152,7 @@ input.boton {
         position: relative;
     }
     
-    .input {
+    .inputL {
         width: 81%;
         background-color: var(--grisClaro);
         border: solid 2px var(--mandarina);
@@ -166,7 +166,7 @@ input.boton {
         right: 35px;
     }
     
-    input.boton {
+    .boton {
         /* margin-bottom: 1px; */
         /* padding: 3%; */
         height: 13%;
@@ -217,7 +217,7 @@ input.boton {
         border: solid 1px var(--mandarina);
     }
     
-    a.colorletra {
+    .colorletra {
         font-size: 10px;
         padding-left: 1%;
         flex-direction: row-reverse;
@@ -243,7 +243,7 @@ input.boton {
         position: relative;
     }
     
-    .input {
+    .inputL {
         width: 81%;
         background-color: var(--grisClaro);
         border: solid 2px var(--mandarina);
@@ -257,7 +257,7 @@ input.boton {
         right: 53px;
     }
     
-    input.boton {
+    .boton {
         height: 12%;
         width: 66%;
         font-size: 12px;

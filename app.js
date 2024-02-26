@@ -8,25 +8,20 @@ const app = express();
 const otherRoutes = require('./routers/other.routes')
 
 app.use(express.static('public'));
-
 app.set('view engine','ejs')
 
 app.use('/', otherRoutes)
 
-app.get('/acceso', (req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/login.html'))
-})
+app.use('/home/acceso', otherRoutes)
 
-app.get('/detalle', (req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/detail.html'))
-})
+app.use('/detalle', otherRoutes)
 
-app.get('/registro', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'register.html'));
-});
+app.use('/home/registro', otherRoutes)
+
+app.get('/form-edit', otherRoutes)
+
+app.get('/carrito', otherRoutes)
 
 
-app.get('/carrito',(req,res)=>{res.sendFile(path.join(__dirname,'./views/carrito.html'))})
 
 app.listen(port,() =>console.log(`http://localhost:${port}`))
-
