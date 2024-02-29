@@ -8,5 +8,12 @@ const admin= require("../controllers/admin")
 router.get("/crear-producto",admin.create)
 
 router.get('/', controller.home)
+router.get('/home/acceso', controller.acceso)
+router.get('/detalle', controller.detalle)
+router.get('/home/registro', controller.registro)
+router.get('/carrito', controller.carrito)
+
+router.get('/form-edit',admin.form)
+
 
 module.exports = router

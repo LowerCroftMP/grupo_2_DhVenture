@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partials/head',{title:"Editar Producto"}) %>
+
+<body class="body-form">
+
+    <%- include('./partials/header')%>
+
+    <main class="main-form">
+        <div class="div-padre">
+            <form class="form">
+                <div class="div-volver">
+                    <button class="volver" type="submit" id="return" name="boton">
+                        <a href="/">Volver al inicio</a>
+                    </button>
+                    <h1 class="titulo">Editar producto</h1>
+                </div>
+                <div class="div-form">
+                    <div class="editar-titulo input">
+                        <input class="barra" type="text" id="title" name="titulo" placeholder="Editar titulo">
+                    </div>
+                    <div class="editar-precio input">
+                        <input class="barra" type="text" id="price" name="precio" placeholder="Editar precio">
+                    </div>
+                    <div class="editar-descripcion input">
+                        <input class="barra" type="text" id="description" name="descripcion"
+                            placeholder="Editar descripcion">
+                    </div>
+                </div>
+                <div class="div-form2">
+                    <div class="editar-categoria input">
+                        <label for="category">Categoria</label>
+                        <select name="categoria" id="category">
+                            <option value="software">Software</option>
+                            <option value="hardware">Hardware</option>
+                        </select>
+                    </div>
+                    <div class="editar-imagen">
+                        <label class="botonhover" for="image">Selec. Img. del Produc.</label>
+                        <input type="file" id="image" name="imagen">
+                    </div>
+                </div>
+                <div>
+                    <button class="botonhover" type="submit" id="button" name="boton">Guardar cambios</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+
+</body>
+
+</html>

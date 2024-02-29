@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head',{title:'Register'}) %>
+
+    <body class="bodyF">
+
+        <header class="home-header">
+            <div class="componentes">
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <img class="logo" src="../../images/Logo.png" alt="Logo">
+
+                <form class="barra-busqueda">
+                    <div class="div-barra">
+                        <input class="barra" name="Buscar" type="text" placeholder="Buscar...">
+                        <div><i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <nav class="nav">
+                        <ul class="ingresar">
+                            <li><a class="acceso" href="/home/acceso">Iniciar Seción</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--Registro-->
+        <main class="mainC">
+            <section class="tipoletra">
+                <div class="global">
+                    <div class="colorletra">
+                        <h2>Registrarse</h2>
+                    </div>
+                    <div>
+                        <input class="registerFbGM" type="button" name="correo" value="Registrarse con Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div>
+                        <input class="registerFbGM" type="button" name="correo" value="Registrarse con Gmail">
+                        <i class="fa-solid fa-m"></i>
+                    </div>
+                    <div class="colorletra">
+                        <hr class="separador">
+                        <br>
+                    </div>
+                    <div class="Register">
+                        <label for="nombre_apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre_apellido" name="nombre_apellido" value="">
+                    </div>
+                    <div class="Register">
+                        <label for="correo_electronico">Correo electrónico:</label>
+                        <input type="email" id="correo_electronico" name="correo_electronico" value="">
+                    </div>
+                    <div class="Register">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" value="">
+                    </div>
+                    <div class="Register">
+                        <label for="repetir_contraseña">Repetir contraseña:</label>
+                        <input type="password" id="repetir_contraseña" name="repetir_contraseña" value="">
+                    </div>
+                    <div class="input-submit-container">
+                        <input class="boton" type="submit" name="Registrarme" value="Registrarme">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('./partials/footer') %>
+
+    </body>
+
+</html>

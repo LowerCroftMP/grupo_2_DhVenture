@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head',{title:'Login'}) %>
+
+    <body class="bodyL">
+        <header class="home-header">
+            <div class="componentes">
+                <div class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <img class="logo" src="../../images/Logo.png" alt="Logo">
+
+                <form class="barra-busqueda">
+                    <div class="div-barra">
+                        <input class="barra" name="Buscar" type="text" placeholder="Buscar...">
+                        <div><i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <nav class="nav">
+                        <ul class="ingresar">
+                            <li><a class="registro" href="/home/registro">Registrarse</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--LOGIN-->
+        <main>
+            <div class="contenedor1">
+                <section class="contenedor2">
+
+                    <div class="colorletra">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo"
+                            value="Iniciar sesion con Facebook"><i class="fa-brands fa-facebook icon"></i></div>
+                    <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo"
+                            value="Iniciar sesion con Gmail"><i class="fa-solid fa-m icon"></i>
+                    </div>
+                    <div class="colorletra">
+                        o
+                    </div>
+                    <div class="login"><label>Direccion de correo
+                            electronico<input class="inputL" type="email" name="correo" value=""></label></div>
+                    <div class="login"><label>Contraseña<input class="inputL" type="password" name="contraseña"
+                                value=""></label></div>
+
+                    <div class="recuerdame"><label><input type="checkbox" name="Recuerdame">Recuerdame</label><a href=""
+                            class="colorletra">
+                            ¿Olvidaste la contraseña?</a></div>
+                    <input class="boton" type="submit" name="Iniciar Sesion" value="Iniciar Sesion">
+
+                </section>
+            </div>
+        </main>
+
+        <%- include('./partials/footer') %>
+
+    </body>
+
+</html>
