@@ -6,4 +6,6 @@ const admin= require("../controllers/admin")
 
 router.get("/crear-producto",admin.create)
 
+router.get('/form-edit',admin.form)
+
 module.exports = router
