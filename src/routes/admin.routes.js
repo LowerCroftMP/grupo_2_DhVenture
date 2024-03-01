@@ -3,11 +3,8 @@ const router = express.Router()
 
 const adminController = require('../controllers/admin')
 
-router.get('/form-edit',adminController.form)
+router.get('/editar-producto',adminController.form)
 
-//*ruta crear producto
-
-//router.get('/',adminController.create)
-
+router.get("/crear-producto",adminController.create)
 
 module.exports = router

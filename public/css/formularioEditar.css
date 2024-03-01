@@ -1,9 +1,15 @@
+.body-form {
+    
+    background-color: var(--grisOscuro);
+
+}
+
 .body-form .main-form {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--grisOscuro);
-    height: 80.5vh;
+    height: 100vh;
 }
 
 .body-form .main-form .div-padre {

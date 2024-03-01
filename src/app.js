@@ -34,7 +34,8 @@ app.use('/', otherRoutes)
 app.use('/authentication', authRoutes)
 app.use('/', cartRoutes)
 app.use('/', productsRoutes)
-app.use('/', adminRoutes)
+app.use('/admin', adminRoutes)
+
 
 //! NOT FOUND AGREGAR IMAGEN
 //app.use((req,res, next) => {
