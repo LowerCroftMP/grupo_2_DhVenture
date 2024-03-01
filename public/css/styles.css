@@ -6,4 +6,6 @@
 @import "./general.css";
 @import './formularioEditar.css';
 @import "./carrito.css";
-@import "./detail.css"
+@import "./detail.css";
+@import "./dashboard.css";
+@import "./createProduct.css";
