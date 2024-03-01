@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("./partials/head",{title:"Crear producto"})%>
+<body class="bodyCP">
+    <%- include("./partials/header")%>
+  <main class="mainCP">
+
+    <div class="contenedorpadreCP">
+      <section class="subcontenedorCP">
+        <h1 class="tituloCP">Crear Producto</h1>
+        <div class="formpadre">
+        <input class="formCP" type="text" name="Nompre Producto"  placeholder="Ingrese producto">
+        <input class="formCP" type="text" name="Precio" placeholder="Ingrese valor">
+        <input class="formCP" type="text" name="Descripcion"  placeholder="Ingrese descripcion"></div>
+        <div class="estadoCP"><span>Estado:</span>
+        <label class="contenedorcheck"><input type="checkbox" value="Estado">Nuevo</label>
+        <label class="contenedorcheck"><input type="checkbox" value="Estado">Usado</label>
+       </div>
+       <input class="botonCP" type="submit" name="Enviar" value="Crear">
+    
+      </section>
+
+    </div>
+    
+  </main>
+       
+
+    <%- include("./partials/footer")%>
+    <%- include("./partials/scripts")%>
+</body>
+
+</html> 

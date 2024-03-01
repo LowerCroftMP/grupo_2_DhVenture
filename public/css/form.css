@@ -89,11 +89,13 @@ input[type="submit"].boton {
 }
 
 input[type="submit"] {
+    margin-top: 10%;
+    width: 70%;
     background-color: #847D78;
     color: #FFFFFF;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 1px solid #EF6262;;
-    border-radius: 4px;
+    padding: 5%;
+    margin-left: 15%;
+    border: 1px solid #EF6262;
+    border-radius: 5px;
     cursor: pointer;
 }
