@@ -49,3 +49,30 @@ que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer 
 * Establecer plazos intermedios para tareas  complejas y poder así, ir revisando el proceso de determinado trabajo.
 * Resolver dudas y capacitarnos mejor en lo especificado para el sprint siguente.
 
+
+
+# Concluciones del 3er Sprint
+
+# Aspectos POSITIVOS:
+
++ Mejoramos en la productividad gracias a una mejor comunicación.
++ Tuvimos mayor colaboración entre los miembros del equipo.
++ Mejoramos la calidad del código debido a mejores revisiones.
++ Participamos mas en reuniones de revisión del proyecto y planificación.
++ Mayor claridad en los objetivos del sprint.
++ Mejoramos la organización de tareas.
+
+
+# A mejorar:
+
+- Reducir tiempos de espera en las entregas de tareas.
+- Mejorar la coordinacion entre las dependencias entre cada miembro del equipo.
+- Mejorar la estimación del tiempo acorde a la complejidad de las tareas.
+- Corregír ciertos buggs en la página
+
+
+# Medidas a tomar:
+
+* Programar reuniones específicas para revisar y actualizarnos entre nosotros el progreso del sprint.
+* Comunicar lo antes posible a los compañeros del grupo en caso de tener problemas, ya sea con el código o personales, para que estos puedan avanzar en el sprint. 
+* Capacitarnos mejor en lo especificado para el sprint siguente.
