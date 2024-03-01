@@ -13,5 +13,9 @@ router.get('/carrito', controller.carrito)
 
 router.get('/form-edit',admin.form)
 
+router.get('/dashboard', (req, res) => {
+    res.render('dashboard', { pageTitle: 'Dashboard' });
+});
+
 
 module.exports = router

@@ -22,6 +22,8 @@ app.get('/form-edit', otherRoutes)
 
 app.get('/carrito', otherRoutes)
 
-
+app.get('/dashboard', (req, res) => {
+    res.render('dashboard', { pageTitle: 'Dashboard' });
+});
 
 app.listen(port,() =>console.log(`http://localhost:${port}`))
