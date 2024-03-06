@@ -16,8 +16,8 @@
     margin-left: 2.2%;
 }
 
-.home-header .componentes .logo {
-    width: 47px;
+.home-header .componentes a .logo {
+    width: 95px  
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra {

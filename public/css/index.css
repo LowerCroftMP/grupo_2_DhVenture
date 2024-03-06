@@ -58,6 +58,14 @@
     border-radius: 15px;
     box-shadow: 1px 4px 7px var(--negro);
 }
+
+.articleHome a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
 .articleHome div{
     width: 89%;
     border: 2px solid #EF6262;

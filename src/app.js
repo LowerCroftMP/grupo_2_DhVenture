@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/', otherRoutes)
 app.use('/authentication', authRoutes)
 app.use('/', cartRoutes)
-app.use('/', productsRoutes)
+app.use('/productos', productsRoutes)
 app.use('/admin', adminRoutes)
 
 
