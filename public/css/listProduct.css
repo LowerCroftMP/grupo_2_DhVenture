@@ -1,0 +1,21 @@
+.main-list{
+  padding: 0px 13px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #2c3034;
+}
+
+.main-list .titulo-lista{
+    color:var(--blanco);
+    margin: 8vw 0vw 3vw 0vw;
+}
+
+.main-list .img-product{
+    width: 5vw;
+}
+
+.main-list .btn-group{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}

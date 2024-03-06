@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <%- include("../partials/head",{title:"Listas de Producto"})%>
+<%- include("../partials/head",{title:"Listas de Producto"})%>
 
+  <body class="body-list">
 
-    <body>
+    <main class="main-list">
+      <h2 class="titulo-lista">Lista de Productos</h2>
+      <table class="table table-dark table-striped" >
+        <tr>
+          <th scope="row">1</th>
+          <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
+          <td>nombre</td>
+          <td>precio</td>
+          <td>decripción</td>
 
-            <main>
-                HOLA
-            </main>
+          <td>
+            <div class="btn-group" role="group">
+              <a href="" class="btn btn-info d-inline-block">Info</a>
+              <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
+              <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
+            </div>
 
-            <%- include('../partials/footer') %>
-            <%- include('../partials/dashboard') %>
-    </body>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">1</th>
+          <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
+          <td>nombre</td>
+          <td>precio</td>
+          <td>decripción</td>
+
+          <td>
+            <div class="btn-group" role="group">
+              <a href="" class="btn btn-info d-inline-block">Info</a>
+              <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
+              <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
+            </div>
+
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">1</th>
+          <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
+          <td>nombre</td>
+          <td>precio</td>
+          <td>decripción</td>
+
+          <td>
+            <div class="btn-group" role="group">
+              <a href="" class="btn btn-info d-inline-block">Info</a>
+              <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
+              <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
+            </div>
+
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">1</th>
+          <td><img class="img-product" src="../../../images/img1.jpeg" alt=""></td>
+          <td>nombre</td>
+          <td>precio</td>
+          <td>decripción</td>
+
+          <td>
+            <div class="btn-group" role="group">
+              <a href="" class="btn btn-info d-inline-block">Info</a>
+              <a href="/admin/editar-producto" class="btn btn-warning d-inline-block">Editar</a>
+              <a href="/admin/eliminar-producto" class="btn btn-danger d-inline-block">Eliminar</a>
+            </div>
+
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <%- include('../partials/dashboard') %>
+  </body>
 
 </html>

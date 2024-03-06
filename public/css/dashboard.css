@@ -43,7 +43,7 @@ body {
 
 
 .menu-dashboard{
-    max-width: 15%;
+    max-width: 80px;
     height: 110vh;
     background-color: var(--menu);
     padding: 20px;
@@ -204,10 +204,6 @@ body {
     }
 
         
-    .menu-dashboard {
-        max-width: 5%;
-    }
-
     .menu-dashboard .enlace span {
         opacity: 1;
         transition: opacity 0.3s ease;
