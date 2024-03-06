@@ -6,4 +6,13 @@
  "Contraseña": "password",
  "Categoría": "category",
  "Imagen": "image"
+},
+{
+    "id":2,
+"Nombre": "firstName",
+ "Apellido": "lastName",
+ "Email": "email",
+ "Contraseña": "password",
+ "Categoría": "category",
+ "Imagen": "image"
 }]
