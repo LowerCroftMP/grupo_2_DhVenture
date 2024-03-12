@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 
-const adminController = require('../controllers/admin')
+const { form, create, list, destroy } = require('../controllers/admin')
 
-router.get('/editar-producto',adminController.form)
-router.get("/crear-producto",adminController.create)
-router.get("/lista-productos",adminController.list)
-
+router.get('/editar-producto',form)
+router.get("/crear-producto",create)
+router.get("/lista-productos",list)
+router.get('./eliminar-producto',destroy)
 
 module.exports = router
