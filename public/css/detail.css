@@ -112,6 +112,11 @@
     margin-right: 5px;
 }
 
+.div-button{
+    display: flex;
+}
+
+
 /* Estilos para tabletas */
 @media (min-width: 480px) {
     .sidebar {

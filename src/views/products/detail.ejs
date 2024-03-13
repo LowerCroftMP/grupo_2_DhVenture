@@ -51,6 +51,14 @@
                 </ul>
                 <button class="button">Comprar ahora</button>
                 <button class="button">Agregar al carrito</button>
+            <div class = 'div-button'>
+				<a href="/admin/editar-producto/" class="button edit" style="color:black; text-decoration: none;">EDITAR
+					PRODUCTO</a>
+				<form action="/admin/eliminar-producto/?_method=DELETE" method="POST"
+					style="display: inline-flex">
+					<button type="submit" class="button delete">ELIMINAR</button>
+				</form>
+            </div>
             </section>
         </div>
     </main>
