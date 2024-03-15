@@ -3,8 +3,8 @@ const path = require('path')
 const { readData, saveData } = require('../../data')
 
 
-module.exports = (req,res) => {
-    const {id} = req.params;
+module.exports = (req, res) => {
+    const { id } = req.params;
     const products = readData();
 
     const productFilter = products.filter(p = p.id !== +id)
@@ -18,6 +18,6 @@ module.exports = (req,res) => {
     }
     saveData(productFilter);
 
-    res.redirect('/');
+    res.redirect('/admin/lista-productos');
 
 }

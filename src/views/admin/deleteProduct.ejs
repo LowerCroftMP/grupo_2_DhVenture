@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head',{title:"Eliminar Producto"}) %>
+
+    <body class="body-card">
+
+        <div class="card">
+            <div class="card-header">
+                <strong class="me-auto">Eliminar producto</strong>
+            </div>
+            <div class="card-body">
+                <h6 class="h3-card"> 
+                    Estas seguro de eliminar el producto: <%= title %>
+                </h6>
+            </div>
+
+            <form action="<%= id %>" class="m-3">
+                <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                <a href="/admin/lista-productos" class="btn btn-outline-secondary">Cancelar</a>
+            </form>
+        </div>
+    </body>
+
+</html>
