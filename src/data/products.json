@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Micro Procesador Ryzen 3 3200g 4.0ghz Amd Am4 Graficos Vega",
+        "description": "Procesador gama baja, perfecto precio y calidad ",
+        "image": "../../images/img1.jpeg",
+        "category": "gama-baja",
+        "price": 220.990
+    },
+    {
+        "id": 2,
+        "name": "Fuente Be Quiet 1000w 80 Plus Gold Pure Power 11 Modular",
+        "description": "Fuente con una potencia de salida de 1000 W y un voltaje de 110V/220V",
+        "image": "../../images/fuente.jpg",
+        "category": "gama-baja",
+        "price": 150.750
+    },
+    {
+        "id": 3,
+        "name": "Gabinete Antec NX292 MESH RGB Vidrio Templado",
+        "description": "Gabinete con soporte para placa base, ventilador ARGB 12cm en la parte trasera. Panel frontal de cristal templado",
+        "image": "../../images/gabinete.jpg",
+        "category": "gama-baja",
+        "price": 60.500
+    },
+    {
+        "id": 4,
+        "name": "Notebook Dell Inspirion 3525 IPS FHD 15.6 // Ryzen 5 5625U 8GB 256GB SSD NVMe W11 Home 120Hz",
+        "description": "Notebook con un procesador RYZEN 5 / 8GB de RAM y con un disco SSD incluido de 256GB",
+        "image": "../../images/notebook.jpg",
+        "category": "gama-alta",
+        "price": 610.500
+    }
+]

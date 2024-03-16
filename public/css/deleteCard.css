@@ -1,0 +1,19 @@
+.body-card{
+    background-color: var(--grisfond);
+}
+
+.card{
+    background-color: var(--grisOscuro);
+    margin: auto;
+    width: 30vw;
+    margin-top: 30vh;
+}
+
+.card .h3-card{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.card .card-header{
+    color: var(--blanco);
+}
