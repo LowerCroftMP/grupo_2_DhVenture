@@ -104,17 +104,18 @@
                             <p class="main_p">ÚLTIMAS NOVEDADES</p>
                         </div>
                         <div class="cardHome">
+                            <% products.forEach(p => {  %>
                             <article class="articleHome">
-                                <a href="/productos/detalle" >
+                                <a href="/productos/detalle/<%= p.id %>" >
                                     <div>
-                                        <img src="../../../images/ryzen.jpg" alt="ryzen">
+                                        <img src="../../../images/<%= p.image %>" alt="ryzen">
                                     </div>
-                                    <h5>Procesador AMD RYZEN 3 3200G 4.0GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth
-                                        Cooler</h5>
-                                    <p>$ 220.990</p>
+                                    <h5> <%= p.description %> </h5>
+                                    <p>$ <%= p.price %></p>
                                 </a>
                             </article>
-                            <article class="articleHome">
+                            <% }) %>
+                            <!-- <article class="articleHome">
                                 <div>
                                     <img src="../../../images/fuente.jpg" alt="fuente">
                                 </div>
@@ -135,7 +136,7 @@
                                 <h5>Notebook Dell Inspirion 3525 IPS FHD 15.6" Ryzen 5 5625U 8GB 256GB SSD NVMe W11 Home
                                     120Hz</h5>
                                 <p>$ 610.500</p>
-                            </article>
+                            </article> -->
                         </div>
                     </div>
 

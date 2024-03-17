@@ -5,7 +5,7 @@
         "description": "Procesador gama baja, perfecto precio y calidad ",
         "image": "../../images/img1.jpeg",
         "category": "gama-baja",
-        "price": 220.990
+        "price": 220990
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "Fuente con una potencia de salida de 1000 W y un voltaje de 110V/220V",
         "image": "../../images/fuente.jpg",
         "category": "gama-baja",
-        "price": 150.750
+        "price": 150750
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "description": "Gabinete con soporte para placa base, ventilador ARGB 12cm en la parte trasera. Panel frontal de cristal templado",
         "image": "../../images/gabinete.jpg",
         "category": "gama-baja",
-        "price": 60.500
+        "price": 60500
     },
     {
         "id": 4,
@@ -29,6 +29,6 @@
         "description": "Notebook con un procesador RYZEN 5 / 8GB de RAM y con un disco SSD incluido de 256GB",
         "image": "../../images/notebook.jpg",
         "category": "gama-alta",
-        "price": 610.500
+        "price": 610500
     }
 ]
