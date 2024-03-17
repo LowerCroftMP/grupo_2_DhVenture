@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("./partials/head") %>
+  <%- include('../partials/head',{title:'Register'}) %>
 
 <body class="home-body">
 
@@ -9,15 +9,15 @@
     <div class="dot-spin"></div>
   </div>
 
-  <%- include("./partials/header") %>
+  <%- include("../partials/header") %>
 
   <main class="register container my-5 row justify-content-center mx-auto">
    <h1 class="text-center text-danger">VISTA 404</h1>
   </main>
 
-  <%- include("./partials/footer") %>
+  <%- include("../partials/footer") %>
 
-  <%- include("./partials/scripts",{
+  <%- include("../partials/scripts",{
     disabledAos:true,
     disabledGlider:true
   }) %>

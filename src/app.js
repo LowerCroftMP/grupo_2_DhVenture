@@ -37,11 +37,10 @@ app.use('/productos', productsRoutes)
 app.use('/admin', adminRoutes)
 
 
-//! NOT FOUND AGREGAR IMAGEN
-//app.use((req,res, next) => {
-//    res.status(404).render("notFound") //* poner la RUTA correcta
-//  })
-//
+app.use((req,res, next) => {
+    res.status(404).render("./other/notFound") 
+  })
+
 
 
 // catch 404 and forward to error handler
@@ -57,7 +56,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('./error');
 });
 
 module.exports = app;
