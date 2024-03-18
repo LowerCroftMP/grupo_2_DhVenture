@@ -1,3 +1,11 @@
-module.exports = (req,res)=> {
-    res.render('./admin/formularioEditar')
+const { readData } = require("../../data");
+
+module.exports = (req, res) => {
+    const { id } = req.params;
+    const products = readData()
+
+    const productFind = products.find(p => p.id === +id)
+    res.render('./admin/editProduct', {
+        product: productFind
+    })
 }

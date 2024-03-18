@@ -36,11 +36,11 @@ app.use('/', cartRoutes)
 app.use('/productos', productsRoutes)
 app.use('/admin', adminRoutes)
 
-
-app.use((req,res, next) => {
-    res.status(404).render("./other/notFound") 
-  })
-
+//
+//app.use((req,res, next) => {
+//    res.status(404).render("./other/notFound") 
+//  })
+//
 
 
 // catch 404 and forward to error handler

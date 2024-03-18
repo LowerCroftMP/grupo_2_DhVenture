@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head',{title:"Editar Producto" + product.name}) %>
+
+    <body class="body-form">
+
+        <main class="main-form">
+            <div class="div-padre">
+                <form class="form" action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="post"
+						enctype="multipart/form-data">
+                    <div class="div-volver">
+                        <button class="volver" type="submit" id="return" name="boton">
+                            <a href="/">Volver al inicio</a>
+                        </button>
+                        <h1 class="titulo">Estás editando: <%= product.name %>
+                        </h1>
+                    </div>
+                    <div class="div-form">
+                        <div class="editar-titulo input">
+                            <input class="barra" type="text" id="title" name="name" placeholder="Editar titulo"
+                                value="<%= product.name %>">
+                        </div>
+                        <div class="editar-precio input">
+                            <input class="barra" type="text" id="price" name="price" placeholder="Editar precio"
+                                value="<%= product.price %>">
+                        </div>
+                        <div class="editar-descripcion input">
+                            <input class="barra" type="text" id="description" name="description"
+                            placeholder="Editar descripcion" value="<%= product.description %>">
+                        </div>
+                    </div>
+                    <div class="div-form2">
+                        <div class="editar-categoria input">
+                            <label for="category">Categoria</label>
+                            <select name="category" id="category">
+                                <option <%=product.category==='gama-alta' ? 'selected' : null %>
+                                    value="gama-alta">gama-alta
+                                </option>
+                                <option <%=product.category==='gama-baja' ? 'selected' : null %> value="gama-baja"
+                                    >gama-baja</option>
+                            </select>
+                        </div>
+                        <div class="editar-imagen">
+                            <label class="botonhover" for="image">Selec. Img. del Produc.</label>
+                            <input type="file" id="image" name="image">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="botonhover" type="submit" id="button" name="boton">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <%- include('../partials/dashboard')%>
+    </body>
+
+</html>

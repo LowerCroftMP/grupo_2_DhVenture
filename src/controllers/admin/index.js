@@ -3,7 +3,8 @@ module.exports = {
     create: require("./createProduct.controller"),
     list: require("./listProduct.controller"),
     destroy:require('./deleteProduct.controller'),
-    remove:require('./deleteVista.controller')
+    remove:require('./deleteVista.controller'),
+    update:require('./update.controller')
 }
 
     
