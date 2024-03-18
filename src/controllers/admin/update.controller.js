@@ -1,6 +1,6 @@
+const { readData, saveData } = require('../../data');
 const path = require('path');
 const fs = require('fs');
-const { readData, saveData } = require('../../data');
 
 module.exports = (req, res) => {
     const { id } = req.params;
@@ -17,7 +17,7 @@ module.exports = (req, res) => {
                 category: category.trim(),
                 image: image ? image.filename : p.image,
             }
-            if (image?.filename) { //
+            if (image && image.filename) { 
                 const pathFile = path.join(__dirname, `../../../public/images/${p.image}`);
                 const exisFile = fs.existsSync; (pathFile)
 
