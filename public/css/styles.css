@@ -9,4 +9,5 @@
 @import "./detail.css";
 @import "./dashboard.css";
 @import "./createProduct.css";
-@import './deleteCard.css'
+@import './deleteCard.css';
+@import './productos.css';
