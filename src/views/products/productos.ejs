@@ -5,7 +5,55 @@
     <%- include('../partials/header') %>
     <main>
         <!--para visualizarlo en el Navegador es /productos/listas-productos no sabia como ponerle XD-->
-        <h1>Lista productos</h1>
+            <div>
+                <img class="image_product d-none d-md-block" style="width: 100%; height: 13rem;"
+                    src="../../../images/newbeastddr4-rgb-1920x504.jpg" alt="">
+            </div>
+            <div class="d-flex flex-column  flex-md-row justify-content-center justify-content-md-between mx-lg-4">
+                <h1 class="titulo fw-bold pt-4 ps-4 col-md-4 py-md-4 ps-md-4 justify-content-md-start ps-xxl-5"> Productos
+                </h1>
+                <div class="d-flex flex-row pt-3">
+                    
+                    <div class="col-6 col-md-3 py-md-4 col-lg-2 pe-xxl-5">
+                        <li class="nav-item dropdown list-unstyled">
+                            <a class="textProduct  nav-link dropdown-toggle d-flex justify-content-center  justify-content-md-end pe-md-5" style="font-size: 18px;"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ordenar por:
+                            </a>
+                            <!-- <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li><button class="dropdown-item" @click="sortByPrice = 'asc'">Lower Price</button></li>
+                                <li><button class="dropdown-item" @click="sortByPrice = 'desc'">Higher Price</button></li>
+                            </ul> -->
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-md-row">
+                <div class="d-flex justify-content-center align-content-center  flex-md-row col-md-7 col-lg-8">
+                    <section class="bgCard d-flex py-4 mb-5 flex-wrap justify-content-center gap-3 py-md-0 col-lg-12">
+                        <% products.forEach(p => {  %>
+                        <div class=" card_product card col-5 col-md-5 col-lg-3">
+                            <img src="../../../images/<%= p.image %>" class="imgCard card-img-top m-0" alt="product" />
+                            <div class="card-body">
+                                <h5 class="card-title">$ <%= p.price %></h5>
+                                <p class="textProduct card-text"><%= p.name %></p>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a class="buttonProduct btn btn-primary me-md-2" href="/productos/detalle/<%= p.id %>">Detail</a>
+                                <a href="/carrito">
+                                    <button class="buttonProduct btn btn-primary" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <% }) %>
+                    </section>
+                </div>
+            </div>
     </main>
     <%- include('../partials/footer') %>
 </body>
