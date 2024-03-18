@@ -9,11 +9,11 @@ var logger = require('morgan')
 
 
 //*RUTAS
-const otherRoutes = require('./routes/other.routes');
+const adminRoutes = require('./routes/admin.routes');
 const authRoutes = require('./routes/authentication.routes');
 const cartRoutes = require('./routes/cart.routes');
+const otherRoutes = require('./routes/other.routes');
 const productsRoutes = require('./routes/products.routes');
-const adminRoutes = require('./routes/admin.routes');
 
 const app = express();
 
@@ -34,7 +34,7 @@ app.use('/', otherRoutes)
 app.use('/authentication', authRoutes)
 app.use('/', cartRoutes)
 app.use('/', productsRoutes)
-app.use('/admin', adminRoutes)
+app.use('/', adminRoutes)
 
 
 //! NOT FOUND AGREGAR IMAGEN
