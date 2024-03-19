@@ -7,7 +7,8 @@
 
 .main-list .titulo-lista{
     color:var(--blanco);
-    margin: 8vw 0vw 3vw 0vw;
+    margin: 3vw;
+    font-weight: normal;
 }
 
 .main-list .img-product{
@@ -18,4 +19,8 @@
     display: flex;
     align-items: center;
     margin-top: 8px;
+}
+
+.img-product{
+    width: 10px;
 }
