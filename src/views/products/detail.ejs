@@ -3,60 +3,70 @@
 
 <%- include('../partials/head',{title:'Detalle de producto'}) %>
 
-<body class="bodyC">
-  
-    <%- include('../partials/header') %>
+    <body class="bodyC">
 
-    <main class="mainC">
-        <div class="details-and-container">
-            <section class="image-details-container">
-                <div class="image-container">
-                    <img src="../../../images/<%= product.image %>" alt="img1">
-                    <div class="additional-images">
-                        <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img2">
-                        <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img3">
-                        <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img4">
-                        <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img5">
-                        <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img6">
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2><%= product.name %></h2>
-                    <p class="rating">Calificación: 4.8</p>
-                    <p class="price">
-                        <h3>$<%= product.price %></h3>
-                    </p>
-                    <p class="share">en 12x $<%= product.price / 12 %></p>
-                    <div class="features-container">
-                        <h3>CARACTERISTICAS GENERALES</h3>
+        <%- include('../partials/header') %>
+
+            <main class="mainC">
+                <div class="details-and-container">
+                    <section class="image-details-container">
+                        <div class="image-container">
+                            <img src="../../../images/<%= product.image %>" alt="img1">
+                            <div class="additional-images">
+                                <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img2">
+                                <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img3">
+                                <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img4">
+                                <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img5">
+                                <img class="hidden-on-mobile" src="../../../images/<%= product.image %>" alt="img6">
+                            </div>
+                        </div>
+                        <div class="details-container">
+                            <h2>
+                                <%= product.name %>
+                            </h2>
+                            <p class="rating">Calificación: 4.8</p>
+                            <p class="price">
+                            <h3>$<%= product.price %>
+                            </h3>
+                            </p>
+                            <p class="share">en 12x $<%= product.price / 12 %>
+                            </p>
+                            <div class="features-container">
+                                <h3>CARACTERISTICAS GENERALES</h3>
+                                <ul>
+                                    <li><strong>Category: </strong>
+                                        <%= product.category %>
+                                    </li>
+                                    <li><strong>Descripcion: </strong>
+                                        <%= product.description %>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="sidebar">
                         <ul>
-                            <li><strong>Category:  </strong><%= product.category %></li>
-                            <li><strong>Descripcion:  </strong><%= product.description %></li>
+                            <li><i class="fa-solid fa-shield-halved"></i> Garantía oficial - 24 meses</li>
+                            <li><i class="fa-solid fa-truck"></i></i> Envíos a todo el país</li>
+                            <li><i class="fa-solid fa-check"></i> Stock disponible</li>
                         </ul>
-                    </div>
+                        <button class="button">Comprar ahora</button>
+                        <button class="button">Agregar al carrito</button>
+                        <div class='div-button'>
+                            <form action="/admin/eliminar-producto/?id=<%= product.id %>&title=<%= product.name %>"
+                                method="get" style="display: inline-flex;">
+                                <a href="/admin/editar-producto/<%= product.id %>" class="button edit"
+                                    style="color:black; text-decoration: none;">EDITAR</a>
+                                <a style="color:black; text-decoration: none;" href="/admin/eliminar-producto"
+                                    class="button delete">ELIMINAR</a>
+                            </form>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section class="sidebar">
-                <ul>
-                    <li><i class="fa-solid fa-shield-halved"></i> Garantía oficial - 24 meses</li>
-                    <li><i class="fa-solid fa-truck"></i></i> Envíos a todo el país</li>
-                    <li><i class="fa-solid fa-check"></i> Stock disponible</li>
-                </ul>
-                <button class="button">Comprar ahora</button>
-                <button class="button">Agregar al carrito</button>
-            <div class = 'div-button'>
-				<a href="/admin/editar-producto/<%= product.id %>" class="button edit" style="color:black; text-decoration: none;">EDITAR</a>
-				<form action="/admin/eliminar-producto/?id<%= product.id %>&title<%= product.title %>" method="POST"
-					style="display: inline-flex">
-					<button type="submit" class="button delete">ELIMINAR</button>
-				</form>
-            </div>
-            </section>
-        </div>
-    </main>
-    
-    <%- include('../partials/footer') %>
+            </main>
 
-</body>
+            <%- include('../partials/footer') %>
+
+    </body>
 
 </html>
