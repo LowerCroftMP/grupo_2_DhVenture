@@ -12,7 +12,7 @@ router.get('/editar-producto/:id',form);
 router.put('/editar-producto/:id',uploadProducts.single('image') ,update);
 
 
-router.get('/eliminar-producto',remove);
+router.get('/eliminar-producto/:id',remove);
 router.delete('/eliminar-producto/:id',destroy);
 
 module.exports = router;

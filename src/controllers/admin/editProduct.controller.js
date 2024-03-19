@@ -5,6 +5,7 @@ module.exports = (req, res) => {
     const products = readData()
 
     const productFind = products.find(p => p.id === +id)
+    
     res.render('./admin/editProduct', {
         product: productFind
     })
