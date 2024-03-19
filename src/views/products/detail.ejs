@@ -26,10 +26,10 @@
                             </h2>
                             <p class="rating">Calificación: 4.8</p>
                             <p class="price">
-                            <h3>$<%= product.price %>
+                            <h3>$<%= toThousand(product.price) %>
                             </h3>
                             </p>
-                            <p class="share">en 12x $<%= product.price / 12 %>
+                            <p class="share">en 12x $<%= toThousand(product.price) / 12 %>
                             </p>
                             <div class="features-container">
                                 <h3>CARACTERISTICAS GENERALES</h3>

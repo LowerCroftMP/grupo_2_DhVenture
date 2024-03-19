@@ -11,10 +11,10 @@
 
         <% products.forEach(p => { %>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row"><%= p.id %></th>
             <td><img class="img-product" src="../../../images/<%= p.image %>"></td>
             <td><%= p.name %></td>
-            <td><%= p.price %></td>
+            <td>$<%= toThousand(p.price) %></td>
             <td><%= p.description %></td>
 
             <td>
