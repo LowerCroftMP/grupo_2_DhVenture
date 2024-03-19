@@ -6,7 +6,6 @@ var logger = require('morgan')
 const methodOverride =  require('method-override'); 
 
 
-
 //*RUTAS
 const otherRoutes = require('./routes/other.routes');
 const authRoutes = require('./routes/authentication.routes');
