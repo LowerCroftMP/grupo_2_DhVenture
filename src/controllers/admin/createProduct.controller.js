@@ -1,5 +1,4 @@
 module.exports=(req,res)=>{
-    const product=require("../../data/products.json")
+    res.render("./admin/createProduct")
 
-    res.render(product)
 }

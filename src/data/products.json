@@ -26,5 +26,19 @@
       "description": "Notebook con un procesador RYZEN 5 / 8GB de RAM y con un disco SSD incluido de 256GB",
       "image": "../../images/notebook.jpg",
       "price": 610500
+   },
+   {
+      "id": 5,
+      "name": "",
+      "price": null,
+      "description": "",
+      "image": "not-image.jpg"
+   },
+   {
+      "id": 6,
+      "name": "",
+      "price": null,
+      "description": "",
+      "image": "not-image.jpg"
    }
 ]

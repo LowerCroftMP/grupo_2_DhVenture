@@ -10,23 +10,22 @@
       <div class="contenedorpadreCP">
         <section class="subcontenedorCP">
           <h1 class="tituloCP">Crear Producto</h1>
-          <form action="/crear-producto" method="post" enctype="multipart/form-data">
+          <form action="/crear-producto" method="POST" enctype="multipart/form-data">
             <div class="formpadre">
               <div>
                 <label for="name">Nombre del producto:</label>
-                <input class="formCP" type="text" name="name" placeholder="Ingrese producto">
+                <input class="formCP" type="text" id="name" name="name" placeholder="Ingrese producto">
               </div>
               <div>
                 <label for="name">Precio:</label>
-                <input class="formCP" type="number" name="price" placeholder="Ingrese valor">
+                <input class="formCP" type="number" id="price" name="price" placeholder="Ingrese valor">
               </div>
               <div>
                 <label for="name">Descripcion:</label>
-                <input class="formCP" type="text" name="description" placeholder="Ingrese descripcion">
+                <input class="formCP" type="text" id="description" name="description" placeholder="Ingrese descripcion">
               </div>
             </div>
-
-            <input class="botonCP" type="submit" name="Enviar" value="Crear">
+            <button type="submit" class="botonCP">Crear</button>
           </form>
         </section>
 
