@@ -1,18 +1,20 @@
-[{
-    "id":1,
-"Nombre": "firstName",
- "Apellido": "lastName",
- "Email": "email",
- "Contraseña": "password",
- "Categoría": "category",
- "Imagen": "image"
-},
-{
-    "id":2,
-"Nombre": "firstName",
- "Apellido": "lastName",
- "Email": "email",
- "Contraseña": "password",
- "Categoría": "category",
- "Imagen": "image"
-}]
+[
+    {
+        "id": 1,
+        "nombre": "ricardina",
+        "apellido": "zabala",
+        "email": "ricazabala04@gmail.com",
+        "contrasenia": 1234,
+        "imagen": "image",
+        "rol": "ADMIN"
+    },
+    {
+        "id": 2,
+        "nombre": "firstName",
+        "apellido": "lastName",
+        "email": "email",
+        "contrasenia": "password",
+        "imagen": "image",
+        "rol": "REGULAR"
+    }
+]

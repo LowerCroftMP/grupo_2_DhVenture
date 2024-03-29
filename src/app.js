@@ -4,6 +4,7 @@ const path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 const methodOverride =  require('method-override'); 
+const session = require('express-session')
 
 
 //*RUTAS
@@ -27,6 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
+app.use(session({secret:'palabra secreta'}));
 
 //*ENRUTADORES
 app.use('/', otherRoutes)
@@ -38,7 +40,7 @@ app.use('/admin', adminRoutes)
 
 app.use((req,res, next) => {
     res.status(404).render("./other/notFound") 
-  })
+});
 
 
 

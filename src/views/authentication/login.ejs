@@ -32,32 +32,32 @@
 
         <!--LOGIN-->
         <main>
-            <div class="contenedor1">
-                <section class="contenedor2">
+            <form action="/authentication/acceso" method="post">
+                <div class="contenedor1">
+                    <section class="contenedor2">
 
-                    <div class="colorletra">
-                        <h2>Login</h2>
-                    </div>
-                    <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo"
-                            value="Iniciar sesion con Facebook"><i class="fa-brands fa-facebook icon"></i></div>
-                    <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo"
-                            value="Iniciar sesion con Gmail"><i class="fa-solid fa-m icon"></i>
-                    </div>
-                    <div class="colorletra">
-                        o
-                    </div>
-                    <div class="login"><label>Direccion de correo
-                            electronico<input class="inputL" type="email" name="correo" value=""></label></div>
-                    <div class="login"><label>Contraseña<input class="inputL" type="password" name="contraseña"
-                                value=""></label></div>
+                        <div class="colorletra">
+                            <h2>Login</h2>
+                        </div>
+                        <div class="contenedorinput"><input class="loginFbGM" type="button" name=""
+                                value="Iniciar sesion con Facebook"><i class="fa-brands fa-facebook icon"></i></div>
+                        <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo"
+                                value="Iniciar sesion con Gmail"><i class="fa-solid fa-m icon"></i>
+                        </div>
+                        <div class="colorletra">
+                            o
+                        </div>
+                        <div class="login"><label>Direccion de correo
+                                electronico<input class="inputL" type="email" name="email" value=""></label></div>
+                        <div class="login"><label>Contraseña<input class="inputL" type="password" name="contrasenia"
+                                    value=""></label></div>
+                        <div class="recuerdame"><label><input type="checkbox" name="rememberme">Recuerdame</label><a
+                                href="" class="colorletra">¿Olvidaste la contraseña?</a></div>
 
-                    <div class="recuerdame"><label><input type="checkbox" name="Recuerdame">Recuerdame</label><a href=""
-                            class="colorletra">
-                            ¿Olvidaste la contraseña?</a></div>
-                    <input class="boton" type="submit" name="Iniciar Sesion" value="Iniciar Sesion">
-
-                </section>
-            </div>
+                        <button class="boton" type="submit" name="button" value="Iniciar Sesion">iniciar sesión</button>
+                    </section>
+                </div>
+            </form>
         </main>
 
         <%- include('../partials/footer') %>
