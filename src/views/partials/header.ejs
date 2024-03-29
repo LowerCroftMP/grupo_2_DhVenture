@@ -16,12 +16,14 @@
         <div>
             <nav class="nav">
                 <ul class="ingresar">
-                    <% if (!locals.userLogin){ %>
+                    <% if (locals.userLogin){ %>
                         <li><a class="acceso" href="/authentication/acceso">Iniciar Seción</a></li>
                         <li><a class="registro" href="/authentication/registro">Registrarse</a></li>
                         <% } else{ %>
-                            <li><a class="registro" href="/users/perfil"><i class="fa-regular fa-user"></i> Ver perfil</a></li>
-                        <%}%>
+                            <li><a class="registro" href="/users/perfil"><i class="fa-regular fa-user"></i> Ver
+                                    perfil</a></li>
+                                    <li><a class="registro" href="/admin/lista-productos">Administrador</a></li>
+                            <% } %>
                 </ul>
             </nav>
         </div>
