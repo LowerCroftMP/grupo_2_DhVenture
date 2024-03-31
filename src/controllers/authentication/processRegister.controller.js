@@ -7,7 +7,7 @@ module.exports = (req, res) => {
     const users = readData('users');
 
     const newUser = {
-        id:!users.length ? 1 : [users.length - 1].id + 1 ,
+        id:!users.length ? 1 : users[users.length - 1].id + 1 ,
         name:name?.trim(),
         lastname:lastname.trim(),
         email:email.trim(),

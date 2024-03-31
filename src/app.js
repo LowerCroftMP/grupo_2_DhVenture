@@ -1,11 +1,12 @@
-var createError = require('http-errors')
-const express = require('express')
-const path = require('path')
-var cookieParser = require('cookie-parser')
-var logger = require('morgan')
+var createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 const methodOverride =  require('method-override'); 
-const session = require('express-session')
+const session = require('express-session');
 
+const checkSession = require('./middlewares/checkSession');
 
 //*RUTAS
 const otherRoutes = require('./routes/other.routes');
@@ -18,7 +19,7 @@ const app = express();
 
 //*CONFIGURACION
 app.set('views', path.join(__dirname,'views'));
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 
 //* MIDDLEWARE 
@@ -30,12 +31,14 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
 app.use(session({secret:'palabra secreta'}));
 
+app.use(checkSession);
+
 //*ENRUTADORES
-app.use('/', otherRoutes)
-app.use('/authentication', authRoutes)
-app.use('/', cartRoutes)
-app.use('/productos', productsRoutes)
-app.use('/admin', adminRoutes)
+app.use('/', otherRoutes);
+app.use('/authentication', authRoutes);
+app.use('/', cartRoutes);
+app.use('/productos', productsRoutes);
+app.use('/admin', adminRoutes);
 
 
 app.use((req,res, next) => {
