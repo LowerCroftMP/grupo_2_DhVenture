@@ -10,7 +10,7 @@ module.exports = (req, res) => {
 
     if (!userFind) res.send('El usuario no existe');
 
-    const isPasswordValid = bcrypt.compareSync(password, userFind.password)
+    const isPasswordValid = bcrypt.compareSync(password, userFind.password);
 
     if (!isPasswordValid) res.send('La contraseña es incorrecta')
 
@@ -20,8 +20,6 @@ module.exports = (req, res) => {
         avatar: userFind.avatar,
         role:userFind.role
     }
-
-    if(remember) res.cookie("userLogin", req.session.userLogin, {maxAge: 6000 * 30})
 
     res.redirect('/')
 }
