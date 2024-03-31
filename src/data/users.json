@@ -1,20 +1,11 @@
 [
     {
         "id": 1,
-        "nombre": "ricardina",
-        "apellido": "zabala",
+        "name": "ricardina",
+        "lastname": "zabala",
         "email": "ricazabala04@gmail.com",
-        "contrasenia": 1234,
-        "imagen": "image",
-        "rol": "ADMIN"
-    },
-    {
-        "id": 2,
-        "nombre": "firstName",
-        "apellido": "lastName",
-        "email": "email",
-        "contrasenia": "password",
-        "imagen": "image",
-        "rol": "REGULAR"
+        "password": 1234,
+        "avatar": "image",
+        "role": "ADMIN"
     }
 ]

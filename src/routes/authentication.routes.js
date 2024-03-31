@@ -9,5 +9,6 @@ router.get('/acceso', authController.login)
 router.post('/acceso', authController.processLogin)
 
 router.get('/registro', authController.registro)
+router.post('/registro', authController.processRegister)
 
 module.exports = router
