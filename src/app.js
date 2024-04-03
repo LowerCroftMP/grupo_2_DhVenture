@@ -6,6 +6,7 @@ var logger = require('morgan');
 const methodOverride =  require('method-override'); 
 const session = require('express-session');
 
+const checkCookie = require('./middlewares/checkCookie');
 const checkSession = require('./middlewares/checkSession');
 
 //*RUTAS
@@ -14,6 +15,7 @@ const authRoutes = require('./routes/authentication.routes');
 const cartRoutes = require('./routes/cart.routes');
 const productsRoutes = require('./routes/products.routes');
 const adminRoutes = require('./routes/admin.routes');
+
 
 const app = express();
 
@@ -30,7 +32,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
 app.use(session({secret:'palabra secreta'}));
-
+app.use(checkCookie)
 app.use(checkSession);
 
 //*ENRUTADORES

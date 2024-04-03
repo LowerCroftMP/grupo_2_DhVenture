@@ -7,5 +7,14 @@
       "password": "$2a$10$N6wksadjlGU31/mnolIYV.IhWWHFmn8dMzdMCZjYgA7396JYbFvli",
       "avatar": "",
       "role": "ADMIN"
+   },
+   {
+      "id": 2,
+      "name": "Nicolas",
+      "lastname": "Crisanto",
+      "email": "nicolascrisanto65@gmail.com",
+      "password": "$2a$10$o9WB3l4/LVYNG0dPIMXAROdCham7NLmKT6o5qpjTmmkWocR3bZ.W2",
+      "avatar": "",
+      "role": "REGULAR"
    }
 ]

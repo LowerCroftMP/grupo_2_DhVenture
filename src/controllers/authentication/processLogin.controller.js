@@ -2,7 +2,7 @@ const { readData } = require("../../data");
 const bcrypt = require('bcryptjs')
 
 module.exports = (req, res) => {
-    const { email, password } = req.body;
+    const { email, password, remember } = req.body;
 
     const users = readData('users')
 
@@ -18,8 +18,12 @@ module.exports = (req, res) => {
         name: userFind.name,
         lastname: userFind.lastname,
         avatar: userFind.avatar,
-        role:userFind.role
+        role: userFind.role
     }
+    if (remember) { res.cookie("userLogin", req.session.userLogin, { maxAge: 6000 * 30 }) };
 
     res.redirect('/')
+
+
+
 }
