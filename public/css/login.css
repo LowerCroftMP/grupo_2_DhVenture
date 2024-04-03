@@ -3,13 +3,11 @@
 }
 
 .contenedor1 {
-    height: 300px;
     margin: 5% 20%;
     background-color: var(--grisfond);
 }
 
-.contenedor2 {
-    height: 300px;
+.contenedor1 form .contenedor2 {
     padding: 0px;
     margin: 0px;
     border-radius: 10px;
@@ -17,44 +15,51 @@
     text-align: center; 
 }
 
-.colorletra {
+.contenedor1 form .contenedor2 .colorletra {
     padding-bottom: 5%;
     font-size: 14px;
     color: var(--naranja);
+    font-weight: normal;
 }
 
-.loginFbGM {
+.contenedor1 form .contenedor2 .contenedorinput .loginFbGM {
     padding: 0px 20px 0px 0px;
     margin-bottom: 4%;
-    height: 15px;
+    height: 20px;
     width: 75%;
     font-size: 7px;
     background-color: var(--grisClaro);
     color: var(--blanco);
-    border-radius: 5%;
+    border-radius: 10px;
     border: solid 1px var(--mandarina);
 }
 
-a.colorletra {
-    font-size: 8px;
-    padding-left: 1%;
-    flex-direction: row-reverse;
+.contenedor1 form .contenedor2 .letra h2{
+    color: var(--naranja);
+    font-size: 17px;
+    padding-top: 10px;
 }
 
 .recuerdame {
-    padding-bottom: 10%;
-    font-size: 8px;
+    display: flex;
+    padding-bottom: 8%;
     color: var(--blanco);
+    justify-content: space-evenly;
 }
 
-.login {
-    width: 95%;
-    margin-bottom: 5%;
-    margin-left: 13%;
-    text-align: center;
-    font-size: 7px;
+.contenedor1 form .contenedor2 .div-label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor1 form .contenedor2 .div-label .login .email {
+    display: flex;
+    justify-content: left;
+    font-weight: normal;
+    font-size: 8px;
+    padding: 0px 0px 0px 30px;
     color: var(--blanco);
-    text-align: start;
 }
 
 .contenedorinput {
@@ -62,29 +67,45 @@ a.colorletra {
 }
 
 .inputL {
-    width: 81%;
+    width: 75%;
     background-color: var(--grisClaro);
     border: solid 2px var(--mandarina);
-    border-radius: inherit;
+    border-radius: 4px;
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 .icon {
     font-size: 12px;
     position: absolute;
-    bottom: 9px;
-    right: 35px;
+    bottom: 12px;
+    right: 39px;
 }
 
-input.boton {
-    /* margin-bottom: 1px; */
-    /* padding: 3%; */
-    height: 13%;
+.contenedor1 form .contenedor2 div .boton {
     width: 66%;
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: normal;
     background-color: var(--grisClaro);
     color: var(--blanco);
-    border: solid 3px var(--mandarina);
-    border-radius: inherit;
+    border: solid 2px var(--mandarina);
+    border-radius: 6px;
+    padding: 5px;
+    margin-bottom: 36px;
+}
+
+.contenedor1 form .contenedor2 .recuerdame .check{width: 10px;}
+
+.contenedor1 form .contenedor2 .recuerdame label{
+    font-size: 9px;
+}
+
+.contenedor1 form .contenedor2 .recuerdame .olvidaste {
+    font-size: 8px;
+    color: var(--naranja);
+    font-weight: normal;
+    text-decoration: none;
+    padding: 8px 0px 0px 0px;
 }
 
 @media (min-width:560px) {
@@ -94,13 +115,11 @@ input.boton {
     }
     
     .contenedor1 {
-        height: 300px;
         margin: 5% 20%;
         background-color: var(--grisfond);
     }
     
     .contenedor2 {
-        height: 300px;
         padding: 0px;
         margin: 0px;
         border-radius: 10px;
@@ -117,7 +136,6 @@ input.boton {
     .loginFbGM {
         padding: 0px 20px 0px 0px;
         margin-bottom: 4%;
-        height: 15px;
         width: 75%;
         font-size: 7px;
         background-color: var(--grisClaro);
@@ -147,11 +165,7 @@ input.boton {
         color: var(--blanco);
         text-align: start;
     }
-    
-    .contenedorinput {
-        position: relative;
-    }
-    
+     
     .inputL {
         width: 81%;
         background-color: var(--grisClaro);
@@ -167,9 +181,8 @@ input.boton {
     }
     
     .boton {
-        /* margin-bottom: 1px; */
-        /* padding: 3%; */
-        height: 13%;
+        margin-bottom: 1px;
+        padding: 3%;
         width: 66%;
         font-size: 12px;
         background-color: var(--grisClaro);
@@ -186,13 +199,11 @@ input.boton {
     
     .contenedor1 {
         padding: 0px;
-        height: 383px;
         margin: 5% 32%;
         background-color: var(--grisfond);
     }
     
     .contenedor2 {
-        height: 390px;
         padding: 0px;
         border-radius: 10px;
         background-color: var(--grisOscuro);
@@ -208,7 +219,6 @@ input.boton {
     .loginFbGM {
         padding: 0px 20px 0px 0px;
         margin-bottom: 4%;
-        height: 21px;
         width: 75%;
         font-size: 12px;
         background-color: var(--grisClaro);
@@ -258,7 +268,6 @@ input.boton {
     }
     
     .boton {
-        height: 12%;
         width: 66%;
         font-size: 12px;
         background-color: var(--grisClaro);

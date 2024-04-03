@@ -17,18 +17,19 @@
 }
 
 .home-header .componentes a .logo {
-    width: 95px  
+    width: 94px;
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra {
     display: flex;
     color: var(--blanco);
     background-color: rgb(255 255 255 / 0.2);
-    border-radius: 9px;
+    border-radius: 12px;
     font-size: 11px;
     width: 51vw;
     border: solid 2px var(--naranja);
     box-shadow: 1px 4px 7px var(--negro);
+    padding: 5px;
 }
 
 .home-header .componentes .barra-busqueda .div-barra .barra ::placeholder {

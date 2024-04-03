@@ -29,7 +29,7 @@
     color: #FFFFFF; 
 }
 
-.colorletra h2 {
+.colordeletra h2 {
     color: #EF6262; 
     text-align: center; 
 }
@@ -38,7 +38,7 @@ input[type="submit"].boton {
     color: #FFFFFF; 
 }
 .colorletra {
-    color: #FFFFFF; 
+    color: white;
 }
 
 .separador {
