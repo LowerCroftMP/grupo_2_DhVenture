@@ -8,11 +8,13 @@ module.exports = (req, res) => {
 
     const userFind = users.find((u) => u.email === email);
 
-    if (!userFind) res.send('El usuario no existe');
+    if (!userFind) res.redirect('/authentication/acceso');
+    //send('El usuario no existe');
 
     const isPasswordValid = bcrypt.compareSync(password, userFind.password);
 
-    if (!isPasswordValid) res.send('La contraseña es incorrecta')
+    if (!isPasswordValid) res.redirect('/authentication/acceso');
+    //send('La contraseña es incorrecta')
 
     req.session.userLogin = {
         name: userFind.name,
