@@ -7,5 +7,14 @@
       "password": "$2a$10$N6wksadjlGU31/mnolIYV.IhWWHFmn8dMzdMCZjYgA7396JYbFvli",
       "avatar": "",
       "role": "ADMIN"
+   },
+   {
+      "id": 2,
+      "name": "Ricardina",
+      "lastname": "Zabala",
+      "email": "ricazabala04@gmail.com",
+      "password": "$2a$10$TSE5SjjSCn/0BTAKfMT.K.WHBMUsXfu54uLpf/DYG.PrQ.hy7OkFK",
+      "avatar": "",
+      "role": "REGULAR"
    }
 ]
