@@ -24,7 +24,7 @@
                 <div>
                     <nav class="nav">
                         <ul class="ingresar">
-                            <li><a class="acceso" href="/authentication/acceso">Iniciar Seción</a></li>
+                            <li><a class="acceso" href="/authentication/acceso">Iniciar Sesión</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,45 +32,46 @@
         </header>
 
         <!--Registro-->
-        <main class="mainC">
-            <form class="tipoletra" action="/authentication/acceso" method="post">
-                <div class="global">
-                    <div class="colorletra">
-                        <h2>Registrarse</h2>
+        <main class="mainF">
+            <section class="tipoletra">
+                <form action="/authentication/registro" method="post">
+                    <div class="global">
+                        <div class="colordeletra">
+                            <h2>Registrarse</h2>
+                        </div>
+                        <div class="contenedorinput">
+                            <input class="registerFbGM" type="button" name="" value="Iniciar sesion con Facebook">
+                            <i class="fa-brands fa-facebook icon"></i>
+                        </div>
+                        <div class="contenedorinput">
+                            <input class="registerFbGM" type="button" name="correo" value="Iniciar sesion con Gmail">
+                            <i class="fa-solid fa-m icon"></i>
+                        </div>
+                        <div class="separador">————— o —————</div>
+                        <div class="div-label">
+                            <div class="Register">
+                                <label class="label" for="nombre">Nombre:</label>
+                                <input class="inputR" type="text" id="nombre" name="name" value="">
+                            </div>
+                            <div class="Register">
+                                <label class="label" for="apellido">Apellido:</label>
+                                <input class="inputR" type="text" id="apellido" name="lastname" value="">
+                            </div>
+                            <div class="Register">
+                                <label class="label" for="correo_electronico">Correo electrónico:</label>
+                                <input class="inputR" type="email" id="correo_electronico" name="email" value="">
+                            </div>
+                            <div class="Register">
+                                <label class="label" for="contraseña">Contraseña:</label>
+                                <input class="inputR" type="password" id="contraseña" name="password" value="">
+                            </div>
+                        </div>
+                        <div class="input-submit-container">
+                            <input class="boton" type="submit" name="Registrarme" value="Registrarme">
+                        </div>
                     </div>
-                    <div>
-                        <input class="registerFbGM" type="button" name="correo" value="Registrarse con Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div>
-                        <input class="registerFbGM" type="button" name="correo" value="Registrarse con Gmail">
-                        <i class="fa-solid fa-m"></i>
-                    </div>
-                    <div class="colorletra">
-                        <hr class="separador">
-                        <br>
-                    </div>
-                    <div class="Register">
-                        <label for="nombre_apellido">Nombre y Apellido:</label>
-                        <input type="text" id="nombre_apellido" name="nombre_apellido" value="">
-                    </div>
-                    <div class="Register">
-                        <label for="correo_electronico">Correo electrónico:</label>
-                        <input type="email" id="correo_electronico" name="correo_electronico" value="">
-                    </div>
-                    <div class="Register">
-                        <label for="contraseña">Contraseña:</label>
-                        <input type="password" id="contraseña" name="contraseña" value="">
-                    </div>
-                    <div class="Register">
-                        <label for="repetir_contraseña">Repetir contraseña:</label>
-                        <input type="password" id="repetir_contraseña" name="repetir_contraseña" value="">
-                    </div>
-                    <div class="input-submit-container">
-                        <input class="boton" type="submit" name="Registrarme" value="Registrarme">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </section>
         </main>
 
         <%- include('../partials/footer') %>

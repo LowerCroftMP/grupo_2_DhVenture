@@ -1,3 +1,11 @@
+const { readData } = require("../../data")
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 module.exports = (req,res)=> {
-    res.render('./admin/listProduct')
+    const products = readData()
+    res.render('./admin/listProduct', { 
+        products,
+        toThousand
+    })
 }

@@ -124,7 +124,7 @@
                                         <img src="../../../images/<%= p.image %>" alt="ryzen">
                                     </div>
                                     <h5> <%= p.description %> </h5>
-                                    <p>$ <%= p.price %></p>
+                                    <p>$ <%= toThousand(p.price) %></p>
                                 </a>
                             </article>
                             <% count++; %>

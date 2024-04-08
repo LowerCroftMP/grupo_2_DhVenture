@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-body {
+.bodyDashboard {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--negro);
 }

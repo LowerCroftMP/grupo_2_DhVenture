@@ -1,18 +1,29 @@
-[{
-    "id":1,
-"Nombre": "firstName",
- "Apellido": "lastName",
- "Email": "email",
- "Contraseña": "password",
- "Categoría": "category",
- "Imagen": "image"
-},
-{
-    "id":2,
-"Nombre": "firstName",
- "Apellido": "lastName",
- "Email": "email",
- "Contraseña": "password",
- "Categoría": "category",
- "Imagen": "image"
-}]
+[
+   {
+      "id": 1,
+      "name": "Rika",
+      "lastname": "Tula",
+      "email": "ricazabala04@gmail.com",
+      "password": "$2a$10$N6wksadjlGU31/mnolIYV.IhWWHFmn8dMzdMCZjYgA7396JYbFvli",
+      "avatar": "",
+      "role": "ADMIN"
+   },
+   {
+      "id": 2,
+      "name": "Ricardina",
+      "lastname": "Zabala",
+      "email": "ricazabala04@gmail.com",
+      "password": "$2a$10$TSE5SjjSCn/0BTAKfMT.K.WHBMUsXfu54uLpf/DYG.PrQ.hy7OkFK",
+      "avatar": "",
+      "role": "REGULAR"
+   },
+   {
+      "id": 3,
+      "name": "",
+      "lastname": "",
+      "email": "",
+      "password": "$2a$10$tn2Q/dgWLbfns/nurZ.DVOMBuLwA.GNGXIIJBbdRbTu.4yrCxFESO",
+      "avatar": "avatar-por-defecto.png",
+      "role": "REGULAR"
+   }
+]

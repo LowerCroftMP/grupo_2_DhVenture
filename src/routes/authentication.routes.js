@@ -7,9 +7,9 @@ const { loginValidation, registerValidation } = require('../middlewares/validati
 //* Rutas de INICIAR SECION y REGISTRO
 
 router.get('/acceso', authController.login)
-router.post('/acceso', loginValidation, authController.login)
+router.post('/acceso',loginValidation , authController.processLogin)
 
 router.get('/registro', authController.registro)
-router.post('/registro', registerValidation, authController.registro)
+router.post('/registro',registerValidation , authController.processRegister)
 
 module.exports = router
