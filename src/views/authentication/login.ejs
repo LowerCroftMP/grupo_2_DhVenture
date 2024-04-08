@@ -31,9 +31,8 @@
         </header>
 
         <!--LOGIN-->
-        <main>
-            <div class="contenedor1">
-                <section class="contenedor2">
+        <main class="mainLogin">
+                <form class="contenedor2" method="post" action="/authentication/acceso">
 
                     <div class="colorletra">
                         <h2>Login</h2>
@@ -46,18 +45,25 @@
                     <div class="colorletra">
                         o
                     </div>
-                    <div class="login"><label>Direccion de correo
-                            electronico<input class="inputL" type="email" name="correo" value=""></label></div>
-                    <div class="login"><label>Contraseña<input class="inputL" type="password" name="contraseña"
-                                value=""></label></div>
+                    <div class="login">
+                        <label>Direccion de correo
+                            electronico<input class="inputL" type="email" name="correo" value="">
+                        </label>
+                    </div>
+                    <div class="login">
+                        <label>Contraseña<input class="inputL" type="password" name="contraseña"
+                                value="">
+                        </label>
+                    </div>
 
-                    <div class="recuerdame"><label><input type="checkbox" name="Recuerdame">Recuerdame</label><a href=""
-                            class="colorletra">
-                            ¿Olvidaste la contraseña?</a></div>
-                    <input class="boton" type="submit" name="Iniciar Sesion" value="Iniciar Sesion">
-
-                </section>
-            </div>
+                    <div class="recuerdame"><label><input type="checkbox" name="Recuerdame">Recuerdame</label>
+                        <a href="" class="colorletra">¿Olvidaste la contraseña?</a> 
+                        <div class="boton">
+                            <input id="boton" type="submit" name="Iniciar Sesion" value="Iniciar Sesion">
+                        </div>
+                    </div>
+                            
+                </form>
         </main>
 
         <%- include('../partials/footer') %>
