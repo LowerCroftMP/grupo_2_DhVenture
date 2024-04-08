@@ -1,14 +1,16 @@
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
+const { login, processLogin, processRegister, registro } = require("../controllers/authentication");
+const { registerValidation } = require("../middlewares/validations/register");
+const { loginValidation } = require("../middlewares/validations/login");
 
-const authController = require('../controllers/authentication')
+// Rutas
+router.get("/acceso", login);
+router.post("/acceso", loginValidation, processLogin);
 
-//* Rutas de INICIAR SECION y REGISTRO
+router.get("/registro", registro);
 
-router.get('/acceso', authController.login)
-router.post('/acceso', authController.processLogin)
+router.post("/registro", registerValidation, processRegister)
 
-router.get('/registro', authController.registro)
-router.post('/registro', authController.processRegister)
 
-module.exports = router
+module.exports = router;

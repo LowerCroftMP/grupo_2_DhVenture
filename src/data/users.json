@@ -7,5 +7,41 @@
       "password": "$2a$10$N6wksadjlGU31/mnolIYV.IhWWHFmn8dMzdMCZjYgA7396JYbFvli",
       "avatar": "",
       "role": "ADMIN"
+   },
+   {
+      "id": 2,
+      "name": "Ricardina",
+      "lastname": "Zabala",
+      "email": "ricazabala04@gmail.com",
+      "password": "$2a$10$TSE5SjjSCn/0BTAKfMT.K.WHBMUsXfu54uLpf/DYG.PrQ.hy7OkFK",
+      "avatar": "",
+      "role": "REGULAR"
+   },
+   {
+      "id": 3,
+      "name": "",
+      "lastname": "",
+      "email": "",
+      "password": "$2a$10$tn2Q/dgWLbfns/nurZ.DVOMBuLwA.GNGXIIJBbdRbTu.4yrCxFESO",
+      "avatar": "avatar-por-defecto.png",
+      "role": "REGULAR"
+   },
+   {
+      "id": 4,
+      "name": "ola",
+      "lastname": "awdwa",
+      "email": "ricazabala04@gmail.com",
+      "password": "$2a$10$Axwx7msYr2eC0S7yiqQkP.0ksbnVPs8DjziIO0gm7IcGgPW8hH/R2",
+      "avatar": "avatar-por-defecto.png",
+      "role": "REGULAR"
+   },
+   {
+      "id": 5,
+      "name": "dasd",
+      "lastname": "awdaw",
+      "email": "ricazabala04@gmail.com",
+      "password": "$2a$10$rOEFkwhUi.pCh9o.sDcjy.rq5P.E/z9mkmv3JcdfKe.yWLlpBhMnO",
+      "avatar": "avatar-por-defecto.png",
+      "role": "REGULAR"
    }
 ]
