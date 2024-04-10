@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head",{title:"Perfil"})%>
+
+  <body class="bodyCP">
+
+      <main class="mainCP">
+       
+
+        <div>
+          <div class="contenedorpadreCP">
+            <section class="subcontenedorCP">
+              <h1 class="tituloCP">Mi perfil</h1>
+            
+              <p>Nombre: <%= user.name %></p>
+              <p>Apellido: <%= user.lastname %></p>
+              <p>Avatar: <%= user.avatar %></p>
+              <p>Rol: <%= user.role %></p>
+  
+            </section>
+  
+          </div>
+              
+         
+          
+        </div>
+
+      
+      </main>
+
+
+      <%- include('../partials/dashboard')%>
+
+        <%- include("../partials/scripts")%>
+  </body>
+
+</html>

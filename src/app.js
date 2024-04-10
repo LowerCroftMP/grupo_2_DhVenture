@@ -15,6 +15,7 @@ const authRoutes = require('./routes/authentication.routes');
 const cartRoutes = require('./routes/cart.routes');
 const productsRoutes = require('./routes/products.routes');
 const adminRoutes = require('./routes/admin.routes');
+const profile=require('./routes/users.routes')
 
 
 const app = express();
@@ -41,7 +42,7 @@ app.use('/authentication', authRoutes);
 app.use('/', cartRoutes);
 app.use('/productos', productsRoutes);
 app.use('/admin', adminRoutes);
-
+app.use('/users',profile)
 
 app.use((req,res, next) => {
     res.status(404).render("./other/notFound") 
