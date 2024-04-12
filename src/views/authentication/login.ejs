@@ -15,7 +15,7 @@
 
                 <form class="barra-busqueda">
                     <div class="div-barra">
-                        <input class="barra" name="Buscar" type="text" placeholder="Buscar...">
+                        <input class="barra" name="Buscar" type="text" placeholder="  Buscar...">
                         <div><i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
@@ -32,30 +32,31 @@
 
         <!--LOGIN-->
         <main>
-            <form action="/authentication/acceso" method="post">
-                <div class="contenedor1">
+            <div class="contenedor1">
+                <form action="/authentication/acceso" method="post">
                     <section class="contenedor2">
-
-                        <div class="colorletra">
-                            <h2>Login</h2>
+                        <div class="letra">
+                            <h2>Iniciar Sesión</h2>
                         </div>
-                        <div class="contenedorinput"><input class="loginFbGM" type="button" name=""
-                                value="Iniciar sesion con Facebook"><i class="fa-brands fa-facebook icon"></i></div>
-                        <div class="contenedorinput"><input class="loginFbGM" type="button" name="correo"
-                                value="Iniciar sesion con Gmail"><i class="fa-solid fa-m icon"></i>
+                        <div class="contenedorinput">
+                            <input class="loginFbGM" type="button" name="" value="Iniciar sesion con Facebook"><i
+                                class="fa-brands fa-facebook icon"></i>
                         </div>
-                        <div class="colorletra">
-                            o
+                        <div class="contenedorinput">
+                            <input class="loginFbGM" type="button" name="correo" value="Iniciar sesion con Gmail"><i
+                                class="fa-solid fa-m icon"></i>
                         </div>
-                        <div class="login">
-                            <label>Direccion de correo electronico
+                        <div class="colorletra">————— o —————</div>
+                        <div class="div-label">
+                            <div class="login">
+                                <label class="email"> Dirección de correo electrónico </label>
                                 <input class="inputL" type="email" name="email" value="">
-                            </label>
-                        </div>
-                        <div class="login">
-                            <label>Contraseña
+                            </div>
+                            <div class="login">
+                                <label class="email">Contraseña </label>
                                 <input class="inputL" type="password" name="password" value="">
-                            </label>
+
+                            </div>
                         </div>
                         <div class="recuerdame">
                             <label>
@@ -63,11 +64,9 @@
                             </label>
                             <a href="" class="colorletra">¿Olvidaste la contraseña?</a>
                         </div>
-
-                        <button class="boton" type="submit" name="button" value="Iniciar Sesion">iniciar sesión</button>
                     </section>
-                </div>
-            </form>
+                </form>
+            </div>
         </main>
 
         <%- include('../partials/footer') %>
