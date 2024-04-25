@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/N1ckck/grupo_8_EightSale.git"
+    "url": "git+https://github.com/LowerCroftMP/grupo_2_DhVenture.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/N1ckck/grupo_8_EightSale/issues"
+    "url": "https://github.com/LowerCroftMP/grupo_2_DhVenture.git"
   },
-  "homepage": "https://github.com/N1ckck/grupo_8_EightSale#readme",
+  "homepage": "https://github.com/LowerCroftMP/grupo_2_DhVenture.git",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
