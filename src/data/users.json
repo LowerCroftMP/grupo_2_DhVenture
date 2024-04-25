@@ -4,7 +4,8 @@
       "name": "Rika",
       "lastname": "Tula",
       "email": "ricazabala04@gmail.com",
-      "password": "$2a$10$N6wksadjlGU31/mnolIYV.IhWWHFmn8dMzdMCZjYgA7396JYbFvli",
+      "password": "$2a$10$nbHZwHfR76JrK9lpZ7OvGOe5X..A/q7baUE5/4OZX.bDnOpNL4gyi",
+      "contraseña": "abc1",
       "avatar": "",
       "role": "ADMIN"
    },
@@ -13,8 +14,29 @@
       "name": "Nicolas",
       "lastname": "Crisanto",
       "email": "nicolascrisanto65@gmail.com",
-      "password": "$2a$10$o9WB3l4/LVYNG0dPIMXAROdCham7NLmKT6o5qpjTmmkWocR3bZ.W2",
+      "password": "$2a$10$OF3SSzRoZRlWY0UTR/8p6OLAwgqa2wg7F7q3scken.HpHHGN6q2Ay",
+      "contraseña": "abc1",
       "avatar": "",
       "role": "REGULAR"
+   },
+   {
+      "id": 3,
+      "name": "Juan",
+      "lastname": "Rodriguez",
+      "email": "j@gmail.com",
+      "password": "$2a$10$nbHZwHfR76JrK9lpZ7OvGOe5X..A/q7baUE5/4OZX.bDnOpNL4gyi",
+      "contraseña": "abc1",
+      "avatar": "",
+      "role": "REGULAR"
+   },
+   {
+      "id": 4,
+      "name": "Maca",
+      "lastname": "rena",
+      "email": "maca@gmail.com",
+      "password": "$2a$10$nbHZwHfR76JrK9lpZ7OvGOe5X..A/q7baUE5/4OZX.bDnOpNL4gyi",
+      "contraseña": "abc1",
+      "avatar": "",
+      "role": "ADMIN"
    }
 ]

@@ -16,15 +16,16 @@ module.exports = (req, res) => {
     if (!isPasswordValid) res.redirect('/authentication/acceso');
     //send('La contraseña es incorrecta')
 
+    const { name, lastname, avatar, role} = userFind
     req.session.userLogin = {
-        name: userFind.name,
-        lastname: userFind.lastname,
-        avatar: userFind.avatar,
-        role: userFind.role
+        name: name,
+        lastname: lastname,
+        avatar: avatar,
+        role: role
     }
 
     if (remember) { res.cookie("userLogin", req.session.userLogin, { maxAge: 6000 * 30 }) };
 
-    res.redirect("/users/perfil")
+    res.redirect("/")
     
 }
