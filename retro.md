@@ -1,7 +1,5 @@
 # Concluciones del Primer Sprint
 
-
-
 Para esta retrospectiva los cuatro integrantes del grupo debatimos como fue nuestra interaccion como equipo,
 que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer para realizar un mejor proyecto.
 
@@ -19,11 +17,7 @@ que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer 
 * Ser mas descriptivos en los commits.
 
 
-
-
 # Concluciones del Segundo Sprint
-
-
 
 # **Aspectos positivos:**
 
@@ -76,7 +70,6 @@ que cosas queremos seguir implementando, cuales mejorar y cuales dejar de hacer 
 * Programar reuniones específicas para revisar y actualizarnos entre nosotros el progreso del sprint.
 * Comunicar lo antes posible a los compañeros del grupo en caso de tener problemas, ya sea con el código o personales, para que estos puedan avanzar en el sprint. 
 * Capacitarnos mejor en lo especificado para el sprint siguente.
-
 
 
 # Concluciones del 4to Sprint
