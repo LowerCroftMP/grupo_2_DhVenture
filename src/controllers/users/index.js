@@ -1,3 +1,3 @@
 module.exports={
-    perfil:require('./profileUser.controller')
+    perfil: require('./profileUser.controller')
 }

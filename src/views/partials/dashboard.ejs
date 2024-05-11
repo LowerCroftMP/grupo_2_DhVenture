@@ -24,6 +24,7 @@
                 <i class="fas fa-home"></i>                
                 <span><a href="/">Home</a></span>
             </div>
+            <% if(!locals.userLogin) { %>
             <div class="enlace"  onclick="window.location.href='/login';">
                 <i class="fas fa-user"></i>
                 <span><a href="/authentication/login">Iniciar Sesion</a></span>
@@ -32,6 +33,12 @@
                 <i class="fa-solid fa-user-plus"></i>
                 <span><a href="/authentication/registro">Crear Usuario</a></span>
             </div>
+            <% } else { %>
+            <div class="enlace"  onclick="window.location.href='/perfil';">
+                <i class="fa-solid fa-user"></i>
+                <span><a href="/users/perfil">Ver Perfil</a></span>
+            </div>
+            <% } %>
             <div class="enlace"  onclick="window.location.href='/carrito';">
                 <i class="fas fa-shopping-cart"></i>
                 <span><a href="/carrito">Carrito</a></span>

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <%- include('../partials/head',{title:'Register'}) %>
-
     <body class="bodyF">
-
+        
         <header class="home-header">
             <div class="componentes">
                 <div class="burger-menu">
@@ -35,6 +33,14 @@
         <main class="mainF">
             <section class="tipoletra">
                 <form action="/authentication/registro" method="post">
+                    <% if (locals.errors) { %>
+                    <div class="error-messages">
+                        <% errors.forEach(function(error) { %>
+                        <p><%= error.msg %></p>
+                        <% }); %>
+                    </div>
+                    <% } %>
+
                     <div class="global">
                         <div class="colordeletra">
                             <h2>Registrarse</h2>
@@ -51,19 +57,19 @@
                         <div class="div-label">
                             <div class="Register">
                                 <label class="label" for="nombre">Nombre:</label>
-                                <input class="inputR" type="text" id="nombre" name="name" value="">
+                                <input class="inputR" type="text" id="nombre" name="name" value="" required>
                             </div>
                             <div class="Register">
                                 <label class="label" for="apellido">Apellido:</label>
-                                <input class="inputR" type="text" id="apellido" name="lastname" value="">
+                                <input class="inputR" type="text" id="apellido" name="lastname" value="" required>
                             </div>
                             <div class="Register">
                                 <label class="label" for="correo_electronico">Correo electrónico:</label>
-                                <input class="inputR" type="email" id="correo_electronico" name="email" value="">
+                                <input class="inputR" type="email" id="correo_electronico" name="email" value="" required>
                             </div>
                             <div class="Register">
-                                <label class="label" for="contraseña">Contraseña:</label>
-                                <input class="inputR" type="password" id="contraseña" name="password" value="">
+                                <label class="label" for="password">password:</label>
+                                <input class="inputR" type="password" id="password" name="password" value="" required>
                             </div>
                         </div>
                         <div class="input-submit-container">
@@ -75,7 +81,8 @@
         </main>
 
         <%- include('../partials/footer') %>
-
+        
+            
     </body>
 
 </html>

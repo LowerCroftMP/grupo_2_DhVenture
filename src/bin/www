@@ -5,7 +5,7 @@
  */
 
  var app = require('../app');
- var debug = require('debug')('kitchening:server');
+ var debug = require('debug')('proyect:server');
  
  var http = require('http');
  

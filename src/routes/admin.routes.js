@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const { form, create, list, destroy, remove, update } = require('../controllers/admin');
-const { uploadProducts } = require('../middlewares/delete-upload-files');
+const { uploadProducts } = require('../middlewares/uploads');
 
 
 router.get("/crear-producto",create);

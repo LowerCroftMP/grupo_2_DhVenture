@@ -1,18 +1,6 @@
-//const {check} = require("express-validator")
-//
-//const fieldMail = check("correo")
-//.notEmpty().withMessage("El correo es requerido").bail()
-//.isEmail().withMessage("Ingrese un Email valido")
-//
-//const fieldPasword = check("contraseña")
-//.notEmpty().withMessage("Ingrese una contraseña")
-//
-//module.exports = [fieldMail, fieldPasword]
-
 const { body } = require("express-validator");
-const { readData } = require("../../data");
+const { loadData } = require("../../database");
 const bcrypt = require("bcryptjs");
-
 
 const fieldEmailDefault = body("email")
   .notEmpty()
@@ -22,22 +10,22 @@ const fieldEmailDefault = body("email")
   .withMessage("Formato invalido")
   .bail();
 
-const fieldPasswordDefault = body("contraseña")
+const fieldPasswordDefault = body("password")
   .notEmpty()
   .withMessage("Campo requerido")
   .bail();;
 
-  const fieldEmailLogin = fieldEmailDefault.custom((value, { req }) => {
-    const users = readData("users");
-    const user = users.find((a) => a.email === value.trim());
+const fieldEmailLogin = fieldEmailDefault.custom((value, { req }) => {
+  const users = loadData("users");
+  const existUser = users.find((a) => a.email === value.trim());
   
-    if (!user) {
-        throw new Error("No se encontró ningún usuario registrado con este correo electrónico");
-    }
+  if (!existUser) {
+    throw new Error("No se encontró ningún usuario registrado con este correo electrónico");
+  }
+ 
+  req.user = existUser; 
   
-    req.user = user; 
-  
-    return true;
+  return true;
 });
 
 const fieldPasswordLogin = fieldPasswordDefault.custom((value, { req }) => {
@@ -45,9 +33,9 @@ const fieldPasswordLogin = fieldPasswordDefault.custom((value, { req }) => {
         throw new Error("Por favor, ingrese un correo electrónico válido");
     }
 
-    const contraseñaHash = bcrypt.compareSync(value, req.user.contraseña); 
+    const passwordHash = bcrypt.compareSync(value, req.user.password); 
 
-    if (!contraseñaHash) {
+    if (!passwordHash) {
         throw new Error("La contraseña proporcionada es incorrecta");
     }
 
@@ -57,5 +45,15 @@ const fieldPasswordLogin = fieldPasswordDefault.custom((value, { req }) => {
 module.exports = {
     loginValidation: [fieldEmailLogin, fieldPasswordLogin],}
 
+//const {check} = require("express-validator")
+//
+//const fieldMail = check("correo")
+//.notEmpty().withMessage("El correo es requerido").bail()
+//.isEmail().withMessage("Ingrese un Email valido")
+//
+//const fieldPasword = check("password")
+//.notEmpty().withMessage("Ingrese una contraseña")
+//
+//module.exports = [fieldMail, fieldPasword]
 
 //me ayudo Pablo Caneda, gracias

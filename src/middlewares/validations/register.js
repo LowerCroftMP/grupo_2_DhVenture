@@ -1,27 +1,22 @@
-//const {check} = require("express-validator")
-//
-//
-//onst fieldName = check("nombre_apellido")
-//notEmpty().withMessage("Debe ingresar su nombre").bail()
-//isLength({ min: 2 }).withMessage("Ingrese un nombre válido")
-//
-//onst fieldMail = check("correo_electronico")
-//notEmpty().withMessage("El correo es requerido").bail()
-//isEmail().withMessage("Ingrese un Email valido")
-//
-//onst fieldPasword = check("contraseña")
-//notEmpty().withMessage("Ingrese una contraseña")
-//isLength({ min: 8 }).withMessage("Debe tener como mínimo 8 carácteres")
-//isAlphanumeric().withMessage("La contraseña debe tener números y letras")
-//
-//onst fieldPasword2 = check("repetir_contraseña")
-//notEmpty().withMessage("Debe reingresar su contraseña")
-//
-//
-//odule.exports = [fieldName, fieldMail, fieldPasword, fieldPasword2]
-
 const { body } = require("express-validator");
-const { readData } = require("../../data");
+const regExPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+
+module.exports = {registerValidation: [
+  body('name', 'El nombre es requerido y no puede estar vacío.')
+    .trim().not().isEmpty(),
+  body('lastname', 'El apellido es requerido y no puede estar vacío.')
+    .trim().not().isEmpty(),
+  body('email', 'Ingrese un email válido.')
+    .trim().isEmail(),
+  body('password', 'La contraseña debe tener al menos 8 caracteres y un máximo de 16 caracteres.')
+    .trim().isLength({ min: 8, max: 16 }),
+  body('password','La contraseña debe incluir al menos una letra mayúscula, una minúscula y un número.')
+    .matches(regExPass)
+]};
+
+/*
+const { body } = require("express-validator");
+const { loadData } = require("../../database");
 const regExPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
 
 const fieldEmailDefault = body("email")
@@ -32,17 +27,21 @@ const fieldEmailDefault = body("email")
   .withMessage("Formato invalido")
   .bail();
 
-const fieldPasswordDefault = body("contrasenia")
+const fieldPasswordDefault = body("password")
   .notEmpty()
   .withMessage("Campo requerido")
-  .bail();
+  .bail()
+  .custom(value => {
+    console.log ('Password recibido para validación:', value)
+    return true;
+  })
   
 const fieldEmailRegister = fieldEmailDefault.custom((value, { req }) => {
-  const users = readData("users");
+  const users = loadData("users");
   const existUser = users.find((u) => u.email === value.trim());
 
   if (existUser) {
-    throw new Error("Credenciales Invalidas");
+    throw new Error("El email ya está registrado");
   }
 
   return true;
@@ -53,13 +52,15 @@ const fieldPasswordRegister = fieldPasswordDefault
   .withMessage("Longitud invalida")
   .bail()
   .matches(regExPass)
-  .withMessage("La contraseña es invalida");
+  .withMessage("La contraseña debe incluir al menos una letra mayúscula, una minúscula y un número");
 
+const fieldEmailLogin = fieldEmailDefault.custom((value, { req }) => {});
 
+const fieldPasswordLogin = fieldPasswordDefault.custom((value, { req }) => {});
 
 module.exports = {
-
   registerValidation: [fieldEmailRegister, fieldPasswordRegister],
 };
+*/
 
 //me ayudo Pablo Caneda, gracias 

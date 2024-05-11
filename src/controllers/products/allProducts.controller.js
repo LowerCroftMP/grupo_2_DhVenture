@@ -1,6 +1,6 @@
-const { readData } = require("../../data")
+const { loadData } = require("../../database")
 
 module.exports = (req,res)=> {
-   const products = readData()
+   const products = loadData()
    res.render('./products/productos', {products})
 }

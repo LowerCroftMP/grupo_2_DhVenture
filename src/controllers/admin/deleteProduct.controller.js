@@ -1,11 +1,11 @@
 const fs = require('fs')
 const path = require('path')
-const { readData, saveData } = require('../../data')
+const { loadData, saveData } = require('../../database')
 
 
 module.exports = (req, res) => {
     const { id } = req.params;
-    const products = readData();
+    const products = loadData();
 
     const productFilter = products.filter(p => p.id !== +id)
     const productDelete = products.find(p => p.id === +id)

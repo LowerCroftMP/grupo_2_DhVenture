@@ -1,11 +1,11 @@
-const { readData } = require("../../data");
+const { loadData } = require("../../database");
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
 module.exports = (req,res)=> {
     const { id } = req.params;
-    const products = readData();
+    const products = loadData();
 
     const productFind = products.find(p => p.id === +id)
     
